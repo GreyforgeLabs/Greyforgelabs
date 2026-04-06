@@ -9,6 +9,15 @@
 [![OpenForge](https://img.shields.io/badge/OpenForge-1a1a2e?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)
 
 <!-- SIGIL:START -->
+![Commits This Week](https://img.shields.io/badge/Commits_This_Week-17-black?style=for-the-badge&labelColor=1a1a1a&logo=github&logoColor=white)
+![Repos](https://img.shields.io/badge/Active_Repos-7-black?style=for-the-badge&labelColor=1a1a1a&logo=github&logoColor=white)
+![OpenForge](https://img.shields.io/badge/OpenForge-7-black?style=for-the-badge&labelColor=1a1a1a&logo=opensourceinitiative&logoColor=white)
+![Stars](https://img.shields.io/badge/Stars-1-black?style=for-the-badge&labelColor=1a1a1a&logo=apachespark&logoColor=white)
+![Python](https://img.shields.io/badge/Python-61%25-black?style=for-the-badge&labelColor=1a1a1a&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-36%25-black?style=for-the-badge&labelColor=1a1a1a&logo=javascript&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-3%25-black?style=for-the-badge&labelColor=1a1a1a&logo=gnubash&logoColor=white)
+
+<sub>Last forged: 2026-04-06 08:17 UTC</sub>
 <!-- SIGIL:END -->
 
 <br>
