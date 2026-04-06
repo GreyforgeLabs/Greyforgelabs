@@ -30,7 +30,7 @@
 
 <br>
 
-We build autonomous software systems — quantitative market scanners, personal security tools, multi-agent orchestration — engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
+We build autonomous software systems - quantitative market scanners, personal security tools, multi-agent orchestration - engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
 
 Complex problems don't require complex solutions. They require the right abstractions, built from scratch, with no compromises.
 
@@ -46,7 +46,7 @@ Complex problems don't require complex solutions. They require the right abstrac
 
 <br>
 
-## 🜁 OpenForge — Open Source
+## 🜁 OpenForge - Open Source
 
 > *Not everything needs to be proprietary. Some tools just need to work.*
 
@@ -57,8 +57,8 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 | [`devcap`](https://github.com/GreyforgeLabs/devcap) | Scan your development environment for installed tools, versions, and capabilities |
 | [`memory-quality-gate`](https://github.com/GreyforgeLabs/memory-quality-gate) | Zero-LLM heuristic scoring for filtering memory candidates before long-term storage |
 | [`sqlite-checkpoint`](https://github.com/GreyforgeLabs/sqlite-checkpoint) | Atomic SQLite backup and snapshot tool |
-| [`voiceops`](https://github.com/GreyforgeLabs/voiceops) | Full-duplex Discord voice bot — Whisper ASR + kokoro-js neural TTS |
-| [`pcam-24`](https://github.com/GreyforgeLabs/pcam-24) | Formal spec for the Phase-Centric Action Model — deterministic interactive simulation timing |
+| [`voiceops`](https://github.com/GreyforgeLabs/voiceops) | Full-duplex Discord voice bot - Whisper ASR + kokoro-js neural TTS |
+| [`pcam-24`](https://github.com/GreyforgeLabs/pcam-24) | Formal spec for the Phase-Centric Action Model - deterministic interactive simulation timing |
 
 <br>
 
@@ -79,7 +79,7 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 ```
 // first_principles_only
 We don't clone. We don't template. Every system is built from
-the ground up to solve the actual problem — not the abstracted,
+the ground up to solve the actual problem - not the abstracted,
 committee-approved version of it.
 
 // complexity_absorbed
