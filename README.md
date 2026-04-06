@@ -30,9 +30,9 @@
 
 <br>
 
-We build autonomous AI software systems — quantitative market scanners, personal security tools, multi-agent orchestration — engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
+We build autonomous software systems — quantitative market scanners, personal security tools, multi-agent orchestration — engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
 
-Most people look at AI and see a chatbot. We looked at AI and saw the end of the excuse that complex problems require complex solutions.
+Complex problems don't require complex solutions. They require the right abstractions, built from scratch, with no compromises.
 
 <br>
 
@@ -66,7 +66,7 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 
 | Product | Domain |
 |:--------|:-------|
-| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent AI orchestration |
+| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent autonomous orchestration |
 | **[ForgeShield](https://greyforge.tech/store/forgeshield)** | Personal security scanner |
 | **[ForgeQuant](https://greyforge.tech/store/forgequant)** | Daily quantitative market scanner |
 | **[ForgeCast](https://greyforge.tech/store/forgecast)** | Kinetic trading dashboard |
