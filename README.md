@@ -96,6 +96,6 @@ If it works, it ships. If it doesn't, it dies.
 
 **[greyforge.tech](https://greyforge.tech)**
 
-*The bottleneck is never capability — it's leverage.*
+*Autonomy, Engineered.*
 
 </div>
