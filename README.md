@@ -8,6 +8,9 @@
 [![License](https://img.shields.io/badge/AGPL--3.0-222222?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/agpl-3.0.html)
 [![OpenForge](https://img.shields.io/badge/OpenForge-1a1a2e?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)
 
+<!-- SIGIL:START -->
+<!-- SIGIL:END -->
+
 <br>
 
 *Stable · Refined · Relentless*
