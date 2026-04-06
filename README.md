@@ -93,6 +93,14 @@ If it works, it ships. If it doesn't, it dies.
 
 <br>
 
+## 🜃 Activity
+
+<!-- WAKATIME:START -->
+*WakaTime stats will appear here once configured.*
+<!-- WAKATIME:END -->
+
+<br>
+
 ---
 
 <div align="center">
