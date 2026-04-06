@@ -54,11 +54,11 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 
 | Product | Domain |
 |:--------|:-------|
-| **ForgeClaw** | Multi-agent AI orchestration |
-| **ForgeShield** | Personal security scanner |
-| **ForgeQuant** | Daily quantitative market scanner |
-| **ForgeCast** | Kinetic trading dashboard |
-| **ForgeFlame** | Personalized astrological forecast engine |
+| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent AI orchestration |
+| **[ForgeShield](https://greyforge.tech/store/forgeshield)** | Personal security scanner |
+| **[ForgeQuant](https://greyforge.tech/store/forgequant)** | Daily quantitative market scanner |
+| **[ForgeCast](https://greyforge.tech/store/forgecast)** | Kinetic trading dashboard |
+| **[ForgeFlame](https://greyforge.tech/store/forgeflame)** | Personalized astrological forecast engine |
 
 <br>
 
