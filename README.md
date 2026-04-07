@@ -32,7 +32,7 @@
 
 We build autonomous software systems - quantitative market scanners, personal security tools, multi-agent orchestration - engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
 
-Complex problems don't require complex solutions. They require the right abstractions, built from scratch, with no compromises.
+Most people look at new models and see a chatbot. We looked at them and saw the end of the excuse that complex problems require complex solutions.
 
 <br>
 
@@ -52,13 +52,14 @@ Complex problems don't require complex solutions. They require the right abstrac
 
 Self-hosted, minimal, built for operators. If it doesn't need to be closed, it shouldn't be.
 
-| Tool | What It Does |
-|:-----|:-------------|
-| [`devcap`](https://github.com/GreyforgeLabs/devcap) | Scan your development environment for installed tools, versions, and capabilities |
-| [`memory-quality-gate`](https://github.com/GreyforgeLabs/memory-quality-gate) | Zero-LLM heuristic scoring for filtering memory candidates before long-term storage |
-| [`sqlite-checkpoint`](https://github.com/GreyforgeLabs/sqlite-checkpoint) | Atomic SQLite backup and snapshot tool |
-| [`voiceops`](https://github.com/GreyforgeLabs/voiceops) | Full-duplex Discord voice bot - Whisper ASR + kokoro-js neural TTS |
-| [`pcam-24`](https://github.com/GreyforgeLabs/pcam-24) | Formal spec for the Phase-Centric Action Model - deterministic interactive simulation timing |
+| Tool | Stack | Status | What It Does |
+|:-----|:------|:-------|:-------------|
+| [`cooldown-guard`](https://github.com/GreyforgeLabs/cooldown-guard) | Rust | In development | Minimum-interval guard for cron jobs and recurring commands |
+| [`devcap`](https://github.com/GreyforgeLabs/devcap) | Python | Released | Scan your development environment for installed tools, versions, and capabilities |
+| [`memory-quality-gate`](https://github.com/GreyforgeLabs/memory-quality-gate) | Python | Released | Zero-LLM heuristic scoring for filtering memory candidates before long-term storage |
+| [`sqlite-checkpoint`](https://github.com/GreyforgeLabs/sqlite-checkpoint) | Python | Released | Atomic SQLite backup and snapshot tool |
+| [`voiceops`](https://github.com/GreyforgeLabs/voiceops) | Node.js | Stable | Full-duplex Discord voice bot - Whisper ASR + kokoro-js neural TTS |
+| [`pcam-24`](https://github.com/GreyforgeLabs/pcam-24) | Spec | Published | Formal spec for the Phase-Centric Action Model - deterministic interactive simulation timing |
 
 <br>
 
@@ -66,7 +67,7 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 
 | Product | Domain |
 |:--------|:-------|
-| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent autonomous orchestration |
+| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent orchestration |
 | **[ForgeShield](https://greyforge.tech/store/forgeshield)** | Personal security scanner |
 | **[ForgeQuant](https://greyforge.tech/store/forgequant)** | Daily quantitative market scanner |
 | **[ForgeCast](https://greyforge.tech/store/forgecast)** | Kinetic trading dashboard |
