@@ -71,7 +71,6 @@ Self-hosted, minimal, built for operators. If it doesn't need to be closed, it s
 | **[ForgeShield](https://greyforge.tech/store/forgeshield)** | Personal security scanner |
 | **[ForgeQuant](https://greyforge.tech/store/forgequant)** | Daily quantitative market scanner |
 | **[ForgeCast](https://greyforge.tech/store/forgecast)** | Kinetic trading dashboard |
-| **[ForgeFlame](https://greyforge.tech/store/forgeflame)** | Personalized astrological forecast engine |
 
 <br>
 
