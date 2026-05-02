@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greyforgelabs.github.io/Greyforgelabs/sitemap.xml

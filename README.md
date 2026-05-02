@@ -1,121 +1,77 @@
 <div align="center">
 
-# 🜂 GREYFORGE
+# Greyforge Labs
 
 **Autonomy, Engineered.**
 
-[![Site](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)
-[![License](https://img.shields.io/badge/AGPL--3.0-222222?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/agpl-3.0.html)
-[![OpenForge](https://img.shields.io/badge/OpenForge-1a1a2e?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)
+[![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)
+[![OpenForge](https://img.shields.io/badge/OpenForge-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)
+[![Store](https://img.shields.io/badge/Store-334155?style=for-the-badge&logo=stripe&logoColor=white)](https://greyforge.tech/store)
+[![Chronicles](https://img.shields.io/badge/Chronicles-3f3f46?style=for-the-badge&logo=readthedocs&logoColor=white)](https://greyforge.tech/chronicles)
+[![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)
 
-<!-- SIGIL:START -->
-![Commits This Week](https://img.shields.io/badge/Commits_This_Week-17-black?style=for-the-badge&labelColor=1a1a1a&logo=github&logoColor=white)
-![Repos](https://img.shields.io/badge/Active_Repos-7-black?style=for-the-badge&labelColor=1a1a1a&logo=github&logoColor=white)
-![OpenForge](https://img.shields.io/badge/OpenForge-7-black?style=for-the-badge&labelColor=1a1a1a&logo=opensourceinitiative&logoColor=white)
-![Stars](https://img.shields.io/badge/Stars-1-black?style=for-the-badge&labelColor=1a1a1a&logo=apachespark&logoColor=white)
-![Python](https://img.shields.io/badge/Python-61%25-black?style=for-the-badge&labelColor=1a1a1a&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-36%25-black?style=for-the-badge&labelColor=1a1a1a&logo=javascript&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-3%25-black?style=for-the-badge&labelColor=1a1a1a&logo=gnubash&logoColor=white)
-
-<sub>Last forged: 2026-04-06 08:17 UTC</sub>
-<!-- SIGIL:END -->
-
-<br>
-
-*Stable · Refined · Relentless*
+Public code, operator tools, research scanners, privacy utilities, release records, and autonomous workflow systems from Greyforge Labs.
 
 </div>
 
 ---
 
-<br>
+## Public Surfaces
 
-We build autonomous software systems - quantitative market scanners, personal security tools, multi-agent orchestration - engineered from first principles. No venture capital. No committee decisions. No bloat. Just relentless engineering and a refusal to ship anything we wouldn't use ourselves.
+| Surface | Link | What Lives There |
+|---|---|---|
+| Greyforge | [greyforge.tech](https://greyforge.tech) | Canonical site, product catalog, and public records |
+| OpenForge | [greyforge.tech/openforge](https://greyforge.tech/openforge) | Free public utilities with GitHub repos and release trails |
+| Store | [greyforge.tech/store](https://greyforge.tech/store) | Software products, role kits, premium records, and private build paths |
+| Chronicles | [greyforge.tech/chronicles](https://greyforge.tech/chronicles) | Build notes, proof records, release narratives, and technical essays |
+| GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Public repositories, docs, release trails, and project history |
 
-Most people look at new models and see a chatbot. We looked at them and saw the end of the excuse that complex problems require complex solutions.
+## Greyforge Products
 
-<br>
+| Product | Status | Public Link | Fit |
+|---|---:|---|---|
+| ForgeShield | Available | [Privacy exposure map](https://greyforge.tech/store/forgeshield) | Ranks public clues, cleanup priorities, and escalation paths before removal work starts |
+| ForgeStrike | Licensed package | [Opt-out workflow software](https://greyforge.tech/store/forgestrike) | Local software for broker opt-out planning, tracking, and reports |
+| ForgeQuant | Source package | [Market research scanner](https://greyforge.tech/store/forgequant) | Scans a watchlist and surfaces candidates worth closer review |
+| Agent Cards | Final deck | [Role kits](https://greyforge.tech/store/agent-cards) | Downloadable role kits with approved card art, scoring, rarity, and deck packaging |
+| Chronicle Package | Package deal | [Premium records](https://greyforge.tech/store/chronicle-package) | Full-edition Chronicle set with lifetime access to the current premium library |
+| ForgeVideo | Coming soon | [Production pipeline preview](https://greyforge.tech/store/forgevideo) | Prompt-to-review-package YouTube production workflow with script, narration, visuals, captions, and QC |
+| ForgeClaw | Custom engagement | [Private operations build](https://greyforge.tech/store/forgeclaw) | Custom orchestration, workflow hardening, specialist routing, and infrastructure design |
 
-## ⚒ The Iron Triangle
+ForgeQuant is research software only. ForgeShield and ForgeStrike are prioritization and workflow tools, not guaranteed removal services.
 
-| | Principle | |
-|:---:|:---|:---|
-| 🛡 | **Stability** | Software that crashes doesn't exist. We guard your time and data as sacred. |
-| ⚡ | **Efficiency** | Depth without weight. Power packed into lightweight, modular designs. |
-| ✦ | **Quality** | One well-built feature outshines a dozen half-finished ones. We ship when it's ready. |
+## OpenForge Utilities
 
-<br>
+| Project | Stack | Repo | Canonical Page | What It Does |
+|---|---|---|---|---|
+| service-cartographer | Python | [GitHub](https://github.com/GreyforgeLabs/service-cartographer) | [OpenForge](https://greyforge.tech/openforge) | Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata |
+| devcap | Python | [GitHub](https://github.com/GreyforgeLabs/devcap) | [Chronicle](https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment) | Scans a development environment for installed tools, versions, paths, and missing requirements |
+| memory-quality-gate | Python | [GitHub](https://github.com/GreyforgeLabs/memory-quality-gate) | [Chronicle](https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge) | Scores memory candidates with deterministic heuristics before long-term storage |
+| sqlite-checkpoint | Python | [GitHub](https://github.com/GreyforgeLabs/sqlite-checkpoint) | [Chronicle](https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups) | Wraps SQLite WAL checkpoint and online backup APIs into one safe CLI |
+| cooldown-guard | Rust | [GitHub](https://github.com/GreyforgeLabs/cooldown-guard) | [Chronicle](https://greyforge.tech/chronicles/cooldown-guard-command-throttling) | Enforces minimum intervals for cron jobs, recurring commands, and repair loops |
+| voiceops | Node.js | [GitHub](https://github.com/GreyforgeLabs/voiceops) | [Chronicle](https://greyforge.tech/chronicles/voiceops-integration) | Runs a full-duplex Discord voice loop for gateway-backed operators |
+| geminibot | Node.js | [GitHub](https://github.com/GreyforgeLabs/geminibot) | [Chronicle](https://greyforge.tech/chronicles/solon-gemini-telegram-bridge) | Bridges Telegram to local Gemini CLI sessions with explicit safety defaults |
+| pcam-24 | Spec | [GitHub](https://github.com/GreyforgeLabs/pcam-24) | [Docs](https://greyforgelabs.github.io/pcam-24/) | Defines a phase-centric action model for deterministic interactive simulation timing |
 
-## 🜁 OpenForge - Open Source
+## Proof Trail
 
-> *Not everything needs to be proprietary. Some tools just need to work.*
+Start here if you want the build record behind the repos and products:
 
-Self-hosted, minimal, built for operators. If it doesn't need to be closed, it shouldn't be.
+- [OpenForge release engine](https://greyforge.tech/chronicles/openforge-release-engine)
+- [OpenForge operator edition](https://greyforge.tech/chronicles/openforge-release-engine-operator-edition)
+- [service-cartographer runtime inventory](https://greyforge.tech/chronicles/service-cartographer-runtime-inventory)
+- [ForgeQuant scanner intelligence](https://greyforge.tech/chronicles/forgequant-scanner-intelligence)
+- [ForgeWall privacy doctrine](https://greyforge.tech/chronicles/forgewall-privacy-doctrine)
+- [The forge becomes a factory](https://greyforge.tech/chronicles/the-forge-becomes-a-factory)
 
-| Tool | Stack | Status | What It Does |
-|:-----|:------|:-------|:-------------|
-| [`cooldown-guard`](https://github.com/GreyforgeLabs/cooldown-guard) | Rust | In development | Minimum-interval guard for cron jobs and recurring commands |
-| [`devcap`](https://github.com/GreyforgeLabs/devcap) | Python | Released | Scan your development environment for installed tools, versions, and capabilities |
-| [`memory-quality-gate`](https://github.com/GreyforgeLabs/memory-quality-gate) | Python | Released | Zero-LLM heuristic scoring for filtering memory candidates before long-term storage |
-| [`sqlite-checkpoint`](https://github.com/GreyforgeLabs/sqlite-checkpoint) | Python | Released | Atomic SQLite backup and snapshot tool |
-| [`voiceops`](https://github.com/GreyforgeLabs/voiceops) | Node.js | Stable | Full-duplex Discord voice bot - Whisper ASR + kokoro-js neural TTS |
-| [`pcam-24`](https://github.com/GreyforgeLabs/pcam-24) | Spec | Published | Formal spec for the Phase-Centric Action Model - deterministic interactive simulation timing |
+## How This Fits
 
-<br>
-
-## 🜄 Products
-
-| Product | Domain |
-|:--------|:-------|
-| **[ForgeClaw](https://greyforge.tech/store/forgeclaw)** | Multi-agent orchestration |
-| **[ForgeShield](https://greyforge.tech/store/forgeshield)** | Personal security scanner |
-| **[ForgeQuant](https://greyforge.tech/store/forgequant)** | Daily quantitative market scanner |
-| **[ForgeCast](https://greyforge.tech/store/forgecast)** | Kinetic trading dashboard |
-
-<br>
-
-## 🜃 Philosophy
-
-```
-// first_principles_only
-We don't clone. We don't template. Every system is built from
-the ground up to solve the actual problem - not the abstracted,
-committee-approved version of it.
-
-// complexity_absorbed
-The system handles complexity so you don't have to.
-Messy process. Refined output. Chaos in, order out.
-
-// ship_it_or_kill_it
-No feature graveyards. No roadmap theater.
-If it works, it ships. If it doesn't, it dies.
-```
-
-<br>
-
-## 🜃 Activity
-
-<!-- WAKATIME:START -->
-*WakaTime stats will appear here once configured.*
-<!-- WAKATIME:END -->
-
-<br>
-
----
+Greyforge keeps the commercial surface at [greyforge.tech/store](https://greyforge.tech/store), the public utility lane at [OpenForge](https://greyforge.tech/openforge), and the evidence trail in [Chronicles](https://greyforge.tech/chronicles). GitHub is the code-first entrypoint: inspect the repos, follow the releases, then use the canonical Greyforge pages for context, purchasing, and records.
 
 <div align="center">
 
-```
-     ⚒
-    /|\
-   / | \
-  /  |  \
- /   🜂   \
-/_________ \
-```
+[greyforge.tech](https://greyforge.tech) - [OpenForge](https://greyforge.tech/openforge) - [Store](https://greyforge.tech/store) - [Chronicles](https://greyforge.tech/chronicles) - [X](https://x.com/GreyforgeLabs)
 
-**[greyforge.tech](https://greyforge.tech)**
-
-*Autonomy, Engineered.*
+**Autonomy, Engineered.**
 
 </div>
