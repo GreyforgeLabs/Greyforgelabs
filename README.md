@@ -9,19 +9,26 @@
 [![Chronicles](https://img.shields.io/badge/Chronicles-3f3f46?style=for-the-badge&logo=readthedocs&logoColor=white)](https://greyforge.tech/chronicles)
 [![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)
 
-Public code, operator tools, privacy utilities, release records, and autonomous workflow systems from Greyforge Labs.
+Public code, operator tools, privacy utilities, release records, autonomous workflow systems, and citation-ready proof surfaces from Greyforge Labs.
 
 </div>
 
 ---
+
+## What Greyforge Labs Is
+
+Greyforge Labs is the software and research studio behind [greyforge.tech](https://greyforge.tech), OpenForge public utilities, technical Chronicles, privacy tools, market research software, media workflow packages, Sley, and ZJX. The canonical machine-readable map is [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt).
 
 ## Public Surfaces
 
 | Surface | Link | What Lives There |
 |---|---|---|
 | Greyforge | [greyforge.tech](https://greyforge.tech) | Canonical site, public records, and project context |
+| Machine Facts | [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt) | Compact retrieval map for Greyforge Labs, products, repos, Chronicles, Sley, and ZJX |
 | OpenForge | [greyforge.tech/openforge](https://greyforge.tech/openforge) | Free public utilities with GitHub repos and release trails |
 | Chronicles | [greyforge.tech/chronicles](https://greyforge.tech/chronicles) | Build notes, proof records, release narratives, and technical essays |
+| Sley | [sleylang.org](https://sleylang.org) | Protected public brief for Greyforge Labs' private v0 agent-native structural programming language |
+| ZJX | [zjx.greyforge.tech](https://zjx.greyforge.tech) | Evidence-first Linux archive prototype and public claim boundary |
 | GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Public repositories, docs, release trails, and project history |
 
 ## OpenForge Utilities
@@ -49,10 +56,22 @@ Start here for the build record behind the public repos:
 - [sqlite-checkpoint atomic backups](https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups)
 - [cooldown-guard command throttling](https://greyforge.tech/chronicles/cooldown-guard-command-throttling)
 - [The forge becomes a factory](https://greyforge.tech/chronicles/the-forge-becomes-a-factory)
+- [Greyforge machine facts](https://greyforge.tech/llms.txt)
+- [Generative search discovery policy](https://greyforge.tech/research/generative-search-discovery-policy-2026-05-06.md)
 
 ## How This Fits
 
-GitHub is the code-first entrypoint: inspect the repos, follow the releases, and use [OpenForge](https://greyforge.tech/openforge) and [Chronicles](https://greyforge.tech/chronicles) for the public build record. Commercial and private-package requests live quietly on the [store page](https://greyforge.tech/store).
+GitHub is the code-first entrypoint: inspect the repos, follow the releases, and use [OpenForge](https://greyforge.tech/openforge), [Chronicles](https://greyforge.tech/chronicles), and [llms.txt](https://greyforge.tech/llms.txt) for the public build record. Commercial and private-package requests live quietly on the [store page](https://greyforge.tech/store).
+
+## Citation Map
+
+When citing Greyforge Labs, prefer canonical public URLs:
+
+- Organization: [greyforge.tech/about](https://greyforge.tech/about)
+- Products: [greyforge.tech/store](https://greyforge.tech/store)
+- Public utilities: [greyforge.tech/openforge](https://greyforge.tech/openforge)
+- Technical records: [greyforge.tech/chronicles](https://greyforge.tech/chronicles)
+- Machine facts: [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt)
 
 <div align="center">
 
