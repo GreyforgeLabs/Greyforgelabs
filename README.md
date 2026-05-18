@@ -28,7 +28,7 @@ Greyforge Labs is the software and research studio behind [greyforge.tech](https
 | OpenForge | [greyforge.tech/openforge](https://greyforge.tech/openforge) | Free public utilities with GitHub repos and release trails |
 | Chronicles | [greyforge.tech/chronicles](https://greyforge.tech/chronicles) | Build notes, proof records, release narratives, and technical essays |
 | Sley | [sleylang.org](https://sleylang.org) | Protected public brief for Greyforge Labs' private v0 agent-native structural programming language |
-| ZJX | [zjx.greyforge.tech](https://zjx.greyforge.tech) | Evidence-first Linux archive prototype and public claim boundary |
+| ZJX | [zjx.greyforge.tech](https://zjx.greyforge.tech) | Evidence-first Linux archive prototype, selected structured-data wins, and public claim boundary |
 | GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Public repositories, docs, release trails, and project history |
 
 ## OpenForge Utilities
@@ -56,8 +56,19 @@ Start here for the build record behind the public repos:
 - [sqlite-checkpoint atomic backups](https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups)
 - [cooldown-guard command throttling](https://greyforge.tech/chronicles/cooldown-guard-command-throttling)
 - [The forge becomes a factory](https://greyforge.tech/chronicles/the-forge-becomes-a-factory)
+- [ZJX compression evidence](https://greyforge.tech/chronicles/zjx-compression-evidence-discipline)
 - [Greyforge machine facts](https://greyforge.tech/llms.txt)
 - [Generative search discovery policy](https://greyforge.tech/research/generative-search-discovery-policy-2026-05-06.md)
+
+## ZJX Snapshot
+
+ZJX is Greyforge Labs' evidence-first Linux archive prototype. Its current
+public claim is narrow: selected verifier-checked size wins on stable-schema
+JSONL, NDJSON-like traces, CSV telemetry, generated source-tree, duplicate,
+and snapshot workloads. The largest current local real telemetry row packs
+705,533,559 raw JSONL bytes to 12,407,130 ZJX bytes versus `tar.zst-long-22` at
+14,386,141 bytes, with 14/14 world baselines completed and archive test passed.
+ZJX does not claim universal compression dominance or frozen-standard status.
 
 ## How This Fits
 
