@@ -1,0 +1,51 @@
+{
+  "catalog_version": "1.0.0",
+  "generated_warning": "Generated surfaces are README.md and index.html. Edit this file, then run scripts/generate_catalog.py --check or --write.",
+  "organization": {
+    "name": "Greyforge Labs",
+    "tagline": "Autonomy, Engineered.",
+    "description": "Public code, operator tools, privacy utilities, release records, autonomous workflow systems, and citation-ready proof surfaces from Greyforge Labs."
+  },
+  "surfaces": [
+    ["Greyforge", "https://greyforge.tech", "Canonical site, public records, and project context"],
+    ["Machine Facts", "https://greyforge.tech/llms.txt", "Compact retrieval map for Greyforge Labs, products, repos, Chronicles, Sley, and ZJX"],
+    ["OpenForge", "https://greyforge.tech/openforge", "Free public utilities with GitHub repos and release trails"],
+    ["Chronicles", "https://greyforge.tech/chronicles", "Build notes, proof records, release narratives, and technical essays"],
+    ["Sley", "https://sleylang.org", "Public home for Greyforge Labs' agent-native structural programming language and tooling"],
+    ["ZJX", "https://zjx.greyforge.tech", "Evidence-first Linux archive prototype, selected structured-data wins, and public claim boundary"],
+    ["GitHub", "https://github.com/GreyforgeLabs", "Public repositories, docs, release trails, and project history"]
+  ],
+  "products": [
+    ["ForgeShield", "Available", "https://greyforge.tech/store/forgeshield", "Privacy exposure map for public clues, cleanup priorities, and escalation paths."],
+    ["ForgeStrike", "Licensed package", "https://greyforge.tech/store/forgestrike", "Local opt-out workflow software for planning, tracking, and reports."],
+    ["ForgeQuant", "Source package", "https://greyforge.tech/store/forgequant", "Market research scanner that surfaces watchlist candidates for closer review."],
+    ["Agent Cards", "Final deck", "https://greyforge.tech/store/agent-cards", "Downloadable role kits with approved art, scoring, rarity, and deck packaging."],
+    ["ForgeVideo", "Coming soon", "https://greyforge.tech/store/forgevideo", "Prompt-to-review-package YouTube production workflow with script, narration, visuals, captions, and QC."],
+    ["ForgeClaw", "Custom engagement", "https://greyforge.tech/store/forgeclaw", "Private orchestration, workflow hardening, specialist routing, and infrastructure design."]
+  ],
+  "openforge_utilities": [
+    ["service-cartographer", "Python", "https://github.com/GreyforgeLabs/service-cartographer", "https://greyforge.tech/openforge", "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata"],
+    ["devcap", "Python", "https://github.com/GreyforgeLabs/devcap", "https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment", "Scans a development environment for installed tools, versions, paths, and missing requirements"],
+    ["memory-quality-gate", "Python", "https://github.com/GreyforgeLabs/memory-quality-gate", "https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge", "Scores memory candidates with deterministic heuristics before long-term storage"],
+    ["sqlite-checkpoint", "Python", "https://github.com/GreyforgeLabs/sqlite-checkpoint", "https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups", "Wraps SQLite WAL checkpoint and online backup APIs into one safe CLI"],
+    ["cooldown-guard", "Rust", "https://github.com/GreyforgeLabs/cooldown-guard", "https://greyforge.tech/chronicles/cooldown-guard-command-throttling", "Enforces minimum intervals for cron jobs, recurring commands, and repair loops"],
+    ["voiceops", "Node.js", "https://github.com/GreyforgeLabs/voiceops", "https://greyforge.tech/chronicles/voiceops-integration", "Runs a full-duplex Discord voice loop for gateway-backed operators"],
+    ["geminibot", "Node.js", "https://github.com/GreyforgeLabs/geminibot", "https://greyforge.tech/chronicles/solon-gemini-telegram-bridge", "Bridges Telegram to local Gemini CLI sessions with explicit safety defaults"]
+  ],
+  "archived_specs": [
+    ["pcam", "Spec", "https://github.com/GreyforgeLabs/pcam", "https://greyforgelabs.github.io/pcam/", "Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed"]
+  ],
+  "proof_trail": [
+    ["OpenForge release engine", "https://greyforge.tech/chronicles/openforge-release-engine"],
+    ["OpenForge operator edition", "https://greyforge.tech/chronicles/openforge-release-engine-operator-edition"],
+    ["service-cartographer runtime inventory", "https://greyforge.tech/chronicles/service-cartographer-runtime-inventory"],
+    ["devcap environment scanner", "https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment"],
+    ["memory-quality-gate deterministic scoring", "https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge"],
+    ["sqlite-checkpoint atomic backups", "https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups"],
+    ["cooldown-guard command throttling", "https://greyforge.tech/chronicles/cooldown-guard-command-throttling"],
+    ["The forge becomes a factory", "https://greyforge.tech/chronicles/the-forge-becomes-a-factory"],
+    ["ZJX compression evidence", "https://greyforge.tech/chronicles/zjx-compression-evidence-discipline"],
+    ["Greyforge machine facts", "https://greyforge.tech/llms.txt"],
+    ["Generative search discovery policy", "https://greyforge.tech/research/generative-search-discovery-policy-2026-05-06.md"]
+  ]
+}
