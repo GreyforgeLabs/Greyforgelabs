@@ -29,7 +29,9 @@ Greyforge Labs is the software and research studio behind [greyforge.tech](https
 | Machine Facts | [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt) | Compact retrieval map for Greyforge Labs, products, repos, Chronicles, Sley, and ZJX |
 | OpenForge | [greyforge.tech/openforge](https://greyforge.tech/openforge) | Free public utilities with GitHub repos and release trails |
 | Chronicles | [greyforge.tech/chronicles](https://greyforge.tech/chronicles) | Build notes, proof records, release narratives, and technical essays |
-| Sley | [sleylang.org](https://sleylang.org) | Public home for Greyforge Labs' agent-native structural programming language and tooling |
+| Active Sley | [github.com/GreyforgeLabs/sley](https://github.com/GreyforgeLabs/sley) | Canonical machine-native Sley 2.x repository and future active ecosystem home |
+| Sley Legacy | [github.com/GreyforgeLabs/sley-legacy](https://github.com/GreyforgeLabs/sley-legacy) | Completed, frozen Sley 1.x human-readable language and consolidated historical ecosystem |
+| Sley Website | [sleylang.org](https://sleylang.org) | Public Sley site with the 1.x legacy brief and active-lineage navigation |
 | ZJX | [zjx.greyforge.tech](https://zjx.greyforge.tech) | Evidence-first Linux archive prototype, selected structured-data wins, and public claim boundary |
 | GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Public repositories, docs, release trails, and project history |
 
