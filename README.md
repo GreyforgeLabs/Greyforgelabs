@@ -39,6 +39,8 @@ Greyforge Labs is the software and research studio behind [greyforge.tech](https
 
 | Project | Stack | Repo | Canonical Page | What It Does |
 |---|---|---|---|---|
+| atomic-json-store | Python | [GitHub](https://github.com/GreyforgeLabs/atomic-json-store) | [Chronicle](https://greyforge.tech/chronicles/atomic-json-store-crash-safe-local-state) | Atomic, cross-process locked, schema-versioned JSON persistence with zero dependencies |
+| node-healthcheck | Bash | [GitHub](https://github.com/GreyforgeLabs/node-healthcheck) | [Chronicle](https://greyforge.tech/chronicles/node-healthcheck-single-script-host-health) | Single-script host health check with JSON output, exit codes 0/1/2, and multi-node SSH aggregation |
 | service-cartographer | Python | [GitHub](https://github.com/GreyforgeLabs/service-cartographer) | [OpenForge](https://greyforge.tech/openforge) | Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata |
 | devcap | Python | [GitHub](https://github.com/GreyforgeLabs/devcap) | [Chronicle](https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment) | Scans a development environment for installed tools, versions, paths, and missing requirements |
 | memory-quality-gate | Python | [GitHub](https://github.com/GreyforgeLabs/memory-quality-gate) | [Chronicle](https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge) | Scores memory candidates with deterministic heuristics before long-term storage |
