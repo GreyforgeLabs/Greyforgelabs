@@ -11,7 +11,7 @@
     ["Machine Facts", "https://greyforge.tech/llms.txt", "Compact retrieval map for Greyforge Labs, products, repos, Chronicles, Sley, and ZJX"],
     ["OpenForge", "https://greyforge.tech/openforge", "Free public utilities with GitHub repos and release trails"],
     ["Chronicles", "https://greyforge.tech/chronicles", "Build notes, proof records, release narratives, and technical essays"],
-    ["Active Sley", "https://github.com/GreyforgeLabs/sley", "Canonical machine-native Sley 2.x repository and future active ecosystem home"],
+    ["Active Sley", "https://sleylang.org/docs", "Sley 2 technical brief; the machine-native 2.x lineage is developed privately by Greyforge Labs and sleylang.org is its public record"],
     ["Sley Legacy", "https://github.com/GreyforgeLabs/sley-legacy", "Completed, frozen Sley 1.x human-readable language and consolidated historical ecosystem"],
     ["Sley Website", "https://sleylang.org", "Public Sley site with the 1.x legacy brief and active-lineage navigation"],
     ["ZJX", "https://zjx.greyforge.tech", "Evidence-first Linux archive prototype, selected structured-data wins, and public claim boundary"],
