@@ -44,7 +44,9 @@ def validate_catalog(data: object) -> dict:
         if not isinstance(organization.get(key), str) or not organization[key].strip():
             raise ValueError(f"organization.{key} must be a non-empty string")
     for key, width in TABLE_WIDTHS.items():
-        if not isinstance(data[key], list) or not data[key]:
+        if not isinstance(data[key], list):
+            raise ValueError(f"catalog.json key must be a list: {key}")
+        if not data[key] and key != "products":
             raise ValueError(f"catalog.json key must be a non-empty list: {key}")
         names: set[str] = set()
         for row_number, row in enumerate(data[key], start=1):
@@ -86,8 +88,7 @@ def render_readme(data: dict) -> str:
         f"**{org['tagline']}**",
         "",
         "[![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)",
-        "[![OpenForge](https://img.shields.io/badge/OpenForge-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)",
-        "[![Chronicles](https://img.shields.io/badge/Chronicles-3f3f46?style=for-the-badge&logo=readthedocs&logoColor=white)](https://greyforge.tech/chronicles)",
+        "[![GitHub](https://img.shields.io/badge/Open_Source-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GreyforgeLabs)",
         "[![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)",
         "",
         org["description"],
@@ -98,7 +99,7 @@ def render_readme(data: dict) -> str:
         "",
         "## What Greyforge Labs Is",
         "",
-        "Greyforge Labs is the software and research studio behind [greyforge.tech](https://greyforge.tech), OpenForge public utilities, technical Chronicles, privacy tools, market research software, media workflow packages, Sley, and ZJX. The canonical machine-readable map is [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt).",
+        "Greyforge Labs builds open-source desktop and operator tools. This GitHub catalog covers active OSS utilities and clearly labeled historical projects. See each repository for its source, license, documentation, and maintenance status.",
         "",
         "## Public Surfaces",
         "",
@@ -109,55 +110,40 @@ def render_readme(data: dict) -> str:
         lines.append(f"| {name} | {md_link(url.replace('https://', ''), url)} | {desc} |")
     lines.extend([
         "",
-        "## OpenForge Utilities",
+        "## Active Open-Source Tools",
         "",
-        "| Project | Stack | Repo | Canonical Page | What It Does |",
+        "| Project | Stack | Repo | Documentation | What It Does |",
         "|---|---|---|---|---|",
     ])
     for name, stack, repo, page, desc in data["openforge_utilities"]:
-        page_label = "OpenForge" if page.endswith("/openforge") else "Chronicle"
-        lines.append(f"| {name} | {stack} | {md_link('GitHub', repo)} | {md_link(page_label, page)} | {desc} |")
+        lines.append(f"| {name} | {stack} | {md_link('GitHub', repo)} | {md_link('Docs', page)} | {desc} |")
     lines.extend([
         "",
-        "## Archived Specifications",
+        "## Historical Projects",
         "",
-        "| Project | Stack | Repo | Canonical Page | Status |",
+        "| Project | Stack | Repo | Documentation | Status |",
         "|---|---|---|---|---|",
     ])
     for name, stack, repo, page, status in data["archived_specs"]:
         lines.append(f"| {name} | {stack} | {md_link('GitHub', repo)} | {md_link('Docs', page)} | {status} |")
     lines.extend([
         "",
-        "## Proof Trail",
+        "## Repository Records",
         "",
-        "Start here for the build record behind the public repos:",
+        "Use repository documentation and release records for project-specific claims:",
         "",
     ])
     for label, url in data["proof_trail"]:
         lines.append(f"- {md_link(label, url)}")
     lines.extend([
         "",
-        "## ZJX Snapshot",
+        "## Attribution",
         "",
-        "ZJX is Greyforge Labs' evidence-first Linux archive prototype. Its current public claim is narrow: selected verifier-checked size wins on stable-schema JSONL, NDJSON-like traces, CSV telemetry, generated source-tree, duplicate, and snapshot workloads. The largest current local real telemetry row packs 705,533,559 raw JSONL bytes to 12,407,130 ZJX bytes versus `tar.zst-long-22` at 14,386,141 bytes, with 14/14 world baselines completed and archive test passed. ZJX does not claim universal compression dominance or frozen-standard status.",
-        "",
-        "## How This Fits",
-        "",
-        "GitHub is the code-first entrypoint: inspect the repos, follow the releases, and use [OpenForge](https://greyforge.tech/openforge), [Chronicles](https://greyforge.tech/chronicles), and [llms.txt](https://greyforge.tech/llms.txt) for the public build record. Commercial and private-package requests live quietly on the [store page](https://greyforge.tech/store).",
-        "",
-        "## Citation Map",
-        "",
-        "When citing Greyforge Labs, prefer canonical public URLs:",
-        "",
-        "- Organization: [greyforge.tech/about](https://greyforge.tech/about)",
-        "- Products: [greyforge.tech/store](https://greyforge.tech/store)",
-        "- Public utilities: [greyforge.tech/openforge](https://greyforge.tech/openforge)",
-        "- Technical records: [greyforge.tech/chronicles](https://greyforge.tech/chronicles)",
-        "- Machine facts: [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt)",
+        "Built by [Greyforge Labs](https://greyforge.tech/about). Individual authorship and license notices remain in each repository.",
         "",
         "<div align=\"center\">",
         "",
-        "[greyforge.tech](https://greyforge.tech) - [OpenForge](https://greyforge.tech/openforge) - [Chronicles](https://greyforge.tech/chronicles) - [X](https://x.com/GreyforgeLabs)",
+        "[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs) - [X](https://x.com/GreyforgeLabs)",
         "",
         f"**{org['tagline']}**",
         "",
@@ -177,7 +163,19 @@ def card(name: str, kicker: str, url: str, desc: str) -> str:
 
 
 def render_index(data: dict) -> str:
+    org = data["organization"]
     product_cards = "\n".join(card(name, kicker, url, desc) for name, kicker, url, desc in data["products"])
+    product_section = f"""
+    <section class="section" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow">Catalog</p>
+        <h2 id="products-title">Products</h2>
+      </div>
+      <div class="card-grid product-grid">
+{product_cards}
+      </div>
+    </section>
+""" if data["products"] else ""
     repo_links = "\n".join(
         f'        <a href="{html.escape(repo)}"><strong>{html.escape(name)}</strong><span>{html.escape(desc)}</span></a>'
         for name, _stack, repo, _page, desc in data["openforge_utilities"]
@@ -195,18 +193,18 @@ def render_index(data: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Greyforge Labs on GitHub | OpenForge, Products, and Proof Records</title>
-  <meta name="description" content="Greyforge Labs GitHub mirror for OpenForge utilities, public repositories, software products, and proof records linking back to greyforge.tech.">
+  <title>Greyforge Labs on GitHub | Open-Source Tools and Historical Projects</title>
+  <meta name="description" content="{html.escape(org['description'])}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://greyforge.tech/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Greyforge Labs on GitHub">
-  <meta property="og:description" content="Code-first index for OpenForge utilities, Greyforge products, and public proof records.">
+  <meta property="og:description" content="{html.escape(org['description'])}">
   <meta property="og:url" content="https://greyforgelabs.github.io/Greyforgelabs/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/252855775?v=4">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Greyforge Labs on GitHub">
-  <meta name="twitter:description" content="OpenForge utilities, Greyforge products, and proof records.">
+  <meta name="twitter:description" content="{html.escape(org['description'])}">
   <meta name="theme-color" content="#0b0f14">
   <link rel="stylesheet" href="./assets/github-page.css">
   <script type="application/ld+json">
@@ -222,9 +220,8 @@ def render_index(data: dict) -> str:
     ],
     "knowsAbout": [
       "open source utilities",
-      "privacy tools",
-      "market research software",
-      "workflow orchestration",
+      "Linux desktop tools",
+      "operator tools",
       "developer tooling"
     ]
   }}
@@ -237,9 +234,9 @@ def render_index(data: dict) -> str:
       <span>Greyforge Labs</span>
     </a>
     <nav aria-label="Primary">
-      <a href="https://greyforge.tech/openforge">OpenForge</a>
-      <a href="https://greyforge.tech/store">Store</a>
-      <a href="https://greyforge.tech/chronicles">Chronicles</a>
+      <a href="#openforge-title">Open Source</a>
+      <a href="#archive-title">History</a>
+      <a href="https://github.com/GreyforgeLabs">GitHub</a>
       <a href="https://x.com/GreyforgeLabs">X</a>
     </nav>
   </header>
@@ -247,45 +244,35 @@ def render_index(data: dict) -> str:
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">GitHub mirror</p>
+        <p class="eyebrow">Open-source catalog</p>
         <h1 id="hero-title">Greyforge Labs</h1>
         <p class="tagline">Autonomy, Engineered.</p>
         <p class="hero-text">
-          Code-first index for OpenForge utilities, public repositories, software products,
-          and proof records. The canonical site remains greyforge.tech.
+          {html.escape(org['description'])}
         </p>
         <div class="hero-actions" aria-label="Main links">
           <a class="button primary" href="https://greyforge.tech">Visit Greyforge</a>
           <a class="button" href="https://github.com/GreyforgeLabs">GitHub Repos</a>
-          <a class="button" href="https://greyforge.tech/openforge">OpenForge</a>
+          <a class="button" href="#openforge-title">Explore Tools</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Surface map">
-        <span>OpenForge</span>
-        <strong>Public utilities</strong>
-        <span>Store</span>
-        <strong>Products and records</strong>
-        <span>Chronicles</span>
-        <strong>Proof trail</strong>
+        <span>Open Source</span>
+        <strong>Desktop and operator tools</strong>
+        <span>History</span>
+        <strong>Sley legacy and archival projects</strong>
+        <span>Documentation</span>
+        <strong>Repository records</strong>
         <span>GitHub</span>
         <strong>Repos and releases</strong>
       </aside>
     </section>
 
-    <section class="section" aria-labelledby="products-title">
-      <div class="section-heading">
-        <p class="eyebrow">Greyforge products</p>
-        <h2 id="products-title">Canonical product links live on greyforge.tech</h2>
-      </div>
-      <div class="card-grid product-grid">
-{product_cards}
-      </div>
-    </section>
-
+{product_section}
     <section class="section" aria-labelledby="openforge-title">
       <div class="section-heading">
-        <p class="eyebrow">OpenForge</p>
-        <h2 id="openforge-title">Public utility repositories</h2>
+        <p class="eyebrow">Open Source</p>
+        <h2 id="openforge-title">Active Open-Source Tools</h2>
       </div>
       <div class="repo-list">
 {repo_links}
@@ -295,7 +282,7 @@ def render_index(data: dict) -> str:
     <section class="section" aria-labelledby="archive-title">
       <div class="section-heading">
         <p class="eyebrow">Archive</p>
-        <h2 id="archive-title">Retired specifications</h2>
+        <h2 id="archive-title">Historical Projects</h2>
       </div>
       <div class="repo-list archive-list">
 {archive_links}
@@ -304,8 +291,8 @@ def render_index(data: dict) -> str:
 
     <section class="section proof" aria-labelledby="proof-title">
       <div class="section-heading">
-        <p class="eyebrow">Proof records</p>
-        <h2 id="proof-title">Read the build trail</h2>
+        <p class="eyebrow">Source and documentation</p>
+        <h2 id="proof-title">Repository Records</h2>
       </div>
       <div class="link-row">
 {proof_links}
@@ -314,7 +301,7 @@ def render_index(data: dict) -> str:
   </main>
 
   <footer>
-    <span>Autonomy, Engineered.</span>
+    <span>Built by Greyforge Labs. Individual authorship and license notices remain in each repository.</span>
     <nav aria-label="Footer">
       <a href="https://greyforge.tech">greyforge.tech</a>
       <a href="https://github.com/GreyforgeLabs">GitHub</a>

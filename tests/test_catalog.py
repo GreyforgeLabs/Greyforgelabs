@@ -46,6 +46,82 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual((ROOT / "README.md").read_text(), render_readme(self.data))
         self.assertEqual((ROOT / "index.html").read_text(), render_index(self.data))
 
+    def test_active_catalog_contains_only_the_approved_oss_tools(self) -> None:
+        expected = {
+            "reprieve", "omarchy-hotbar", "omarchy-grabbar", "atomic-json-store",
+            "node-healthcheck", "service-cartographer", "devcap", "memory-quality-gate",
+            "sqlite-checkpoint", "cooldown-guard", "voiceops",
+        }
+        self.assertEqual({row[0] for row in self.data["openforge_utilities"]}, expected)
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            for name in expected:
+                self.assertIn(f"https://github.com/GreyforgeLabs/{name}", rendered)
+
+    def test_historical_projects_are_labeled_and_separate_from_active_tools(self) -> None:
+        history = {row[0]: row[4] for row in self.data["archived_specs"]}
+        self.assertEqual(set(history), {"sley-legacy", "pcam", "geminibot"})
+        self.assertIn("Sley 1.2", history["sley-legacy"])
+        self.assertIn("legacy", history["sley-legacy"].lower())
+        self.assertIn("retired", history["pcam"].lower())
+        self.assertIn("draft", history["pcam"].lower())
+        self.assertIn("no conformance class claimed", history["pcam"].lower())
+        self.assertIn("archived", history["geminibot"].lower())
+        self.assertIn("no further releases", history["geminibot"].lower())
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            self.assertIn("Historical Projects", rendered)
+            for name in history:
+                self.assertIn(f"https://github.com/GreyforgeLabs/{name}", rendered)
+
+    def test_current_public_surfaces_are_oss_only(self) -> None:
+        self.assertEqual(self.data["products"], [])
+        surfaces = [json.dumps(self.data), render_readme(self.data), render_index(self.data)]
+        retired = (
+            "zjx", "sley 2", "sley2", "sleylang.org", "forgeshield", "forgestrike",
+            "forgequant", "agent cards", "forgevideo", "forgeclaw", "/store",
+            "privacy tools", "privacy utilities", "market research", "private-package",
+            "software products", "llms.txt",
+        )
+        for surface in surfaces:
+            for phrase in retired:
+                self.assertNotIn(phrase, surface.lower())
+
+    def test_legacy_record_identifies_the_source_tag_not_a_missing_release(self) -> None:
+        self.assertIn(
+            ["Sley 1.2.1 legacy source tag", "https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1"],
+            self.data["proof_trail"],
+        )
+
+    def test_empty_products_are_valid_and_hide_the_product_section(self) -> None:
+        data = copy.deepcopy(self.data)
+        data["products"] = []
+        validate_catalog(data)
+        rendered = render_index(data)
+        self.assertNotIn('id="products-title"', rendered)
+        self.assertNotIn('class="card-grid product-grid"', rendered)
+
+    def test_nonempty_products_still_render_when_explicitly_supplied(self) -> None:
+        data = copy.deepcopy(self.data)
+        data["products"] = [["Example & Tool", "OSS", "https://example.invalid", "A <tool>"]]
+        validate_catalog(data)
+        rendered = render_index(data)
+        self.assertIn('id="products-title"', rendered)
+        self.assertIn("Example &amp; Tool", rendered)
+        self.assertIn("A &lt;tool&gt;", rendered)
+
+    def test_empty_required_tables_are_still_rejected(self) -> None:
+        for key in ("surfaces", "openforge_utilities", "archived_specs", "proof_trail"):
+            with self.subTest(key=key):
+                broken = copy.deepcopy(self.data)
+                broken[key] = []
+                with self.assertRaisesRegex(ValueError, "non-empty list"):
+                    validate_catalog(broken)
+
+    def test_credential_bearing_urls_are_rejected(self) -> None:
+        broken = copy.deepcopy(self.data)
+        broken["proof_trail"][0][1] = "https://user:password@example.invalid"
+        with self.assertRaisesRegex(ValueError, "credential-free HTTPS URL"):
+            validate_catalog(broken)
+
     def test_invalid_schema_is_rejected(self) -> None:
         broken = copy.deepcopy(self.data)
         broken["openforge_utilities"][0] = ["too", "short"]

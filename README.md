@@ -7,11 +7,10 @@
 **Autonomy, Engineered.**
 
 [![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)
-[![OpenForge](https://img.shields.io/badge/OpenForge-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://greyforge.tech/openforge)
-[![Chronicles](https://img.shields.io/badge/Chronicles-3f3f46?style=for-the-badge&logo=readthedocs&logoColor=white)](https://greyforge.tech/chronicles)
+[![GitHub](https://img.shields.io/badge/Open_Source-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GreyforgeLabs)
 [![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)
 
-Public code, operator tools, privacy utilities, release records, autonomous workflow systems, and citation-ready proof surfaces from Greyforge Labs.
+Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.
 
 </div>
 
@@ -19,77 +18,54 @@ Public code, operator tools, privacy utilities, release records, autonomous work
 
 ## What Greyforge Labs Is
 
-Greyforge Labs is the software and research studio behind [greyforge.tech](https://greyforge.tech), OpenForge public utilities, technical Chronicles, privacy tools, market research software, media workflow packages, Sley, and ZJX. The canonical machine-readable map is [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt).
+Greyforge Labs builds open-source desktop and operator tools. This GitHub catalog covers active OSS utilities and clearly labeled historical projects. See each repository for its source, license, documentation, and maintenance status.
 
 ## Public Surfaces
 
 | Surface | Link | What Lives There |
 |---|---|---|
-| Greyforge | [greyforge.tech](https://greyforge.tech) | Canonical site, public records, and project context |
-| Machine Facts | [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt) | Compact retrieval map for Greyforge Labs, products, repos, Chronicles, Sley, and ZJX |
-| OpenForge | [greyforge.tech/openforge](https://greyforge.tech/openforge) | Free public utilities with GitHub repos and release trails |
-| Chronicles | [greyforge.tech/chronicles](https://greyforge.tech/chronicles) | Build notes, proof records, release narratives, and technical essays |
-| Active Sley | [sleylang.org/docs](https://sleylang.org/docs) | Sley 2 technical brief; the machine-native 2.x lineage is developed privately by Greyforge Labs and sleylang.org is its public record |
-| Sley Legacy | [github.com/GreyforgeLabs/sley-legacy](https://github.com/GreyforgeLabs/sley-legacy) | Completed, frozen Sley 1.x human-readable language and consolidated historical ecosystem |
-| Sley Website | [sleylang.org](https://sleylang.org) | Public Sley site with the 1.x legacy brief and active-lineage navigation |
-| ZJX | [zjx.greyforge.tech](https://zjx.greyforge.tech) | Evidence-first Linux archive prototype, selected structured-data wins, and public claim boundary |
-| GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Public repositories, docs, release trails, and project history |
+| GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Open-source repositories, documentation, and project history |
+| Greyforge | [greyforge.tech](https://greyforge.tech) | Canonical Greyforge Labs website |
 
-## OpenForge Utilities
+## Active Open-Source Tools
 
-| Project | Stack | Repo | Canonical Page | What It Does |
+| Project | Stack | Repo | Documentation | What It Does |
 |---|---|---|---|---|
-| service-cartographer | Python | [GitHub](https://github.com/GreyforgeLabs/service-cartographer) | [OpenForge](https://greyforge.tech/openforge) | Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata |
-| devcap | Python | [GitHub](https://github.com/GreyforgeLabs/devcap) | [Chronicle](https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment) | Scans a development environment for installed tools, versions, paths, and missing requirements |
-| memory-quality-gate | Python | [GitHub](https://github.com/GreyforgeLabs/memory-quality-gate) | [Chronicle](https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge) | Scores memory candidates with deterministic heuristics before long-term storage |
-| sqlite-checkpoint | Python | [GitHub](https://github.com/GreyforgeLabs/sqlite-checkpoint) | [Chronicle](https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups) | Wraps SQLite WAL checkpoint and online backup APIs into one safe CLI |
-| cooldown-guard | Rust | [GitHub](https://github.com/GreyforgeLabs/cooldown-guard) | [Chronicle](https://greyforge.tech/chronicles/cooldown-guard-command-throttling) | Enforces minimum intervals for cron jobs, recurring commands, and repair loops |
-| voiceops | Node.js | [GitHub](https://github.com/GreyforgeLabs/voiceops) | [Chronicle](https://greyforge.tech/chronicles/voiceops-integration) | Runs a full-duplex Discord voice loop for gateway-backed operators |
-| geminibot | Node.js | [GitHub](https://github.com/GreyforgeLabs/geminibot) | [Chronicle](https://greyforge.tech/chronicles/solon-gemini-telegram-bridge) | Bridges Telegram to local Gemini CLI sessions with explicit safety defaults |
+| reprieve | QML | [GitHub](https://github.com/GreyforgeLabs/reprieve) | [Docs](https://github.com/GreyforgeLabs/reprieve#readme) | Gives Super+W a safety net on Omarchy by hiding windows instead of terminating them, with a keystroke to restore them |
+| omarchy-hotbar | QML | [GitHub](https://github.com/GreyforgeLabs/omarchy-hotbar) | [Docs](https://github.com/GreyforgeLabs/omarchy-hotbar#readme) | Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer |
+| omarchy-grabbar | C++ | [GitHub](https://github.com/GreyforgeLabs/omarchy-grabbar) | [Docs](https://github.com/GreyforgeLabs/omarchy-grabbar#readme) | Adds mouse-driven window controls to Omarchy for minimizing, maximizing, closing, and moving windows |
+| atomic-json-store | Python | [GitHub](https://github.com/GreyforgeLabs/atomic-json-store) | [Docs](https://github.com/GreyforgeLabs/atomic-json-store#readme) | Atomic, cross-process locked, schema-versioned JSON persistence for Python |
+| node-healthcheck | Shell | [GitHub](https://github.com/GreyforgeLabs/node-healthcheck) | [Docs](https://github.com/GreyforgeLabs/node-healthcheck#readme) | Single-script Linux host health checks with JSON output, status exit codes, and multi-node SSH aggregation |
+| service-cartographer | Python | [GitHub](https://github.com/GreyforgeLabs/service-cartographer) | [Docs](https://github.com/GreyforgeLabs/service-cartographer#readme) | Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata |
+| devcap | Python | [GitHub](https://github.com/GreyforgeLabs/devcap) | [Docs](https://github.com/GreyforgeLabs/devcap#readme) | Scans a development environment for installed tools, versions, paths, and missing requirements |
+| memory-quality-gate | Python | [GitHub](https://github.com/GreyforgeLabs/memory-quality-gate) | [Docs](https://github.com/GreyforgeLabs/memory-quality-gate#readme) | Scores memory candidates with deterministic heuristics before long-term storage |
+| sqlite-checkpoint | Python | [GitHub](https://github.com/GreyforgeLabs/sqlite-checkpoint) | [Docs](https://github.com/GreyforgeLabs/sqlite-checkpoint#readme) | Wraps SQLite WAL checkpoint and online backup APIs in a CLI |
+| cooldown-guard | Rust | [GitHub](https://github.com/GreyforgeLabs/cooldown-guard) | [Docs](https://github.com/GreyforgeLabs/cooldown-guard#readme) | Enforces minimum intervals for cron jobs, recurring commands, and repair loops |
+| voiceops | Node.js | [GitHub](https://github.com/GreyforgeLabs/voiceops) | [Docs](https://github.com/GreyforgeLabs/voiceops#readme) | Runs a full-duplex Discord voice loop for agent gateways |
 
-## Archived Specifications
+## Historical Projects
 
-| Project | Stack | Repo | Canonical Page | Status |
+| Project | Stack | Repo | Documentation | Status |
 |---|---|---|---|---|
-| pcam | Spec | [GitHub](https://github.com/GreyforgeLabs/pcam) | [Docs](https://greyforgelabs.github.io/pcam/) | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
+| sley-legacy | Shell | [GitHub](https://github.com/GreyforgeLabs/sley-legacy) | [Docs](https://github.com/GreyforgeLabs/sley-legacy#readme) | Public Sley 1.2 legacy lineage; completed, frozen human-readable language and historical ecosystem |
+| pcam | Spec | [GitHub](https://github.com/GreyforgeLabs/pcam) | [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
+| geminibot | Node.js | [GitHub](https://github.com/GreyforgeLabs/geminibot) | [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
 
-## Proof Trail
+## Repository Records
 
-Start here for the build record behind the public repos:
+Use repository documentation and release records for project-specific claims:
 
-- [OpenForge release engine](https://greyforge.tech/chronicles/openforge-release-engine)
-- [OpenForge operator edition](https://greyforge.tech/chronicles/openforge-release-engine-operator-edition)
-- [service-cartographer runtime inventory](https://greyforge.tech/chronicles/service-cartographer-runtime-inventory)
-- [devcap environment scanner](https://greyforge.tech/chronicles/devcap-scanning-your-dev-environment)
-- [memory-quality-gate deterministic scoring](https://greyforge.tech/chronicles/memory-quality-without-an-llm-judge)
-- [sqlite-checkpoint atomic backups](https://greyforge.tech/chronicles/sqlite-checkpoint-atomic-backups)
-- [cooldown-guard command throttling](https://greyforge.tech/chronicles/cooldown-guard-command-throttling)
-- [The forge becomes a factory](https://greyforge.tech/chronicles/the-forge-becomes-a-factory)
-- [ZJX compression evidence](https://greyforge.tech/chronicles/zjx-compression-evidence-discipline)
-- [Greyforge machine facts](https://greyforge.tech/llms.txt)
-- [Generative search discovery policy](https://greyforge.tech/research/generative-search-discovery-policy-2026-05-06.md)
+- [Repository source, documentation, and license records](https://github.com/GreyforgeLabs)
+- [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1)
+- [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
 
-## ZJX Snapshot
+## Attribution
 
-ZJX is Greyforge Labs' evidence-first Linux archive prototype. Its current public claim is narrow: selected verifier-checked size wins on stable-schema JSONL, NDJSON-like traces, CSV telemetry, generated source-tree, duplicate, and snapshot workloads. The largest current local real telemetry row packs 705,533,559 raw JSONL bytes to 12,407,130 ZJX bytes versus `tar.zst-long-22` at 14,386,141 bytes, with 14/14 world baselines completed and archive test passed. ZJX does not claim universal compression dominance or frozen-standard status.
-
-## How This Fits
-
-GitHub is the code-first entrypoint: inspect the repos, follow the releases, and use [OpenForge](https://greyforge.tech/openforge), [Chronicles](https://greyforge.tech/chronicles), and [llms.txt](https://greyforge.tech/llms.txt) for the public build record. Commercial and private-package requests live quietly on the [store page](https://greyforge.tech/store).
-
-## Citation Map
-
-When citing Greyforge Labs, prefer canonical public URLs:
-
-- Organization: [greyforge.tech/about](https://greyforge.tech/about)
-- Products: [greyforge.tech/store](https://greyforge.tech/store)
-- Public utilities: [greyforge.tech/openforge](https://greyforge.tech/openforge)
-- Technical records: [greyforge.tech/chronicles](https://greyforge.tech/chronicles)
-- Machine facts: [greyforge.tech/llms.txt](https://greyforge.tech/llms.txt)
+Built by [Greyforge Labs](https://greyforge.tech/about). Individual authorship and license notices remain in each repository.
 
 <div align="center">
 
-[greyforge.tech](https://greyforge.tech) - [OpenForge](https://greyforge.tech/openforge) - [Chronicles](https://greyforge.tech/chronicles) - [X](https://x.com/GreyforgeLabs)
+[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs) - [X](https://x.com/GreyforgeLabs)
 
 **Autonomy, Engineered.**
 
