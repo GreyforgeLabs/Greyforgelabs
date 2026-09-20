@@ -91,6 +91,10 @@ class CatalogTests(unittest.TestCase):
             self.data["proof_trail"],
         )
 
+    def test_catalog_links_do_not_depend_on_social_network_access(self) -> None:
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            self.assertNotIn("https://x.com/", rendered)
+
     def test_empty_products_are_valid_and_hide_the_product_section(self) -> None:
         data = copy.deepcopy(self.data)
         data["products"] = []
@@ -157,7 +161,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_generated_surface_links_are_inventoryable(self) -> None:
         urls = generated_surface_urls()
-        self.assertIn("https://x.com/GreyforgeLabs", urls)
+        self.assertIn("https://github.com/GreyforgeLabs", urls)
         self.assertIn("https://greyforge.tech/about", urls)
 
     def test_catalog_is_valid_json(self) -> None:

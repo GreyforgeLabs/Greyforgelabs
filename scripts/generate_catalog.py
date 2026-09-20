@@ -89,7 +89,7 @@ def render_readme(data: dict) -> str:
         "",
         "[![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)",
         "[![GitHub](https://img.shields.io/badge/Open_Source-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GreyforgeLabs)",
-        "[![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)",
+
         "",
         org["description"],
         "",
@@ -143,7 +143,7 @@ def render_readme(data: dict) -> str:
         "",
         "<div align=\"center\">",
         "",
-        "[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs) - [X](https://x.com/GreyforgeLabs)",
+        "[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs)",
         "",
         f"**{org['tagline']}**",
         "",
@@ -215,8 +215,7 @@ def render_index(data: dict) -> str:
     "url": "https://greyforge.tech",
     "logo": "https://avatars.githubusercontent.com/u/252855775?v=4",
     "sameAs": [
-      "https://github.com/GreyforgeLabs",
-      "https://x.com/GreyforgeLabs"
+      "https://github.com/GreyforgeLabs"
     ],
     "knowsAbout": [
       "open source utilities",
@@ -237,7 +236,6 @@ def render_index(data: dict) -> str:
       <a href="#openforge-title">Open Source</a>
       <a href="#archive-title">History</a>
       <a href="https://github.com/GreyforgeLabs">GitHub</a>
-      <a href="https://x.com/GreyforgeLabs">X</a>
     </nav>
   </header>
 
@@ -305,7 +303,6 @@ def render_index(data: dict) -> str:
     <nav aria-label="Footer">
       <a href="https://greyforge.tech">greyforge.tech</a>
       <a href="https://github.com/GreyforgeLabs">GitHub</a>
-      <a href="https://x.com/GreyforgeLabs">X</a>
     </nav>
   </footer>
 </body>

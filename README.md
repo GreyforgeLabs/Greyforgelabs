@@ -8,7 +8,6 @@
 
 [![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)
 [![GitHub](https://img.shields.io/badge/Open_Source-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GreyforgeLabs)
-[![X](https://img.shields.io/badge/X-GreyforgeLabs-111111?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GreyforgeLabs)
 
 Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.
 
@@ -65,7 +64,7 @@ Built by [Greyforge Labs](https://greyforge.tech/about). Individual authorship a
 
 <div align="center">
 
-[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs) - [X](https://x.com/GreyforgeLabs)
+[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs)
 
 **Autonomy, Engineered.**
 
