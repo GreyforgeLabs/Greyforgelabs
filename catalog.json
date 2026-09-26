@@ -1,36 +1,41 @@
 {
-  "catalog_version": "1.0.0",
-  "generated_warning": "Generated surfaces are README.md and index.html. Edit this file, then run scripts/generate_catalog.py --check or --write.",
+  "catalog_version": "1.1.0",
+  "generated_warning": "Generated surfaces are README.md, index.html, and assets/cards/*.svg. Edit this file, then run scripts/generate_catalog.py --check or --write.",
   "organization": {
     "name": "Greyforge Labs",
     "tagline": "Autonomy, Engineered.",
-    "description": "Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects."
+    "description": "Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure."
   },
   "surfaces": [
-    ["GitHub", "https://github.com/GreyforgeLabs", "Open-source repositories, documentation, and project history"],
-    ["Greyforge", "https://greyforge.tech", "Canonical Greyforge Labs website"]
+    ["greyforge.tech", "https://greyforge.tech", "Greyforge Labs website"],
+    ["sleylang.org", "https://sleylang.org", "Sley language website and documentation"],
+    ["sley-lang", "https://github.com/sley-lang", "Sley organization on GitHub"],
+    ["GreyforgeLabs", "https://github.com/GreyforgeLabs", "Greyforge Labs repositories on GitHub"]
+  ],
+  "flagship": [
+    ["Sley", "Rust", "https://github.com/sley-lang/sley", "https://sleylang.org", "A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit."]
   ],
   "products": [],
   "openforge_utilities": [
-    ["reprieve", "QML", "https://github.com/GreyforgeLabs/reprieve", "https://github.com/GreyforgeLabs/reprieve#readme", "Gives Super+W a safety net on Omarchy by hiding windows instead of terminating them, with a keystroke to restore them"],
-    ["omarchy-hotbar", "QML", "https://github.com/GreyforgeLabs/omarchy-hotbar", "https://github.com/GreyforgeLabs/omarchy-hotbar#readme", "Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer"],
-    ["omarchy-grabbar", "C++", "https://github.com/GreyforgeLabs/omarchy-grabbar", "https://github.com/GreyforgeLabs/omarchy-grabbar#readme", "Adds mouse-driven window controls to Omarchy for minimizing, maximizing, closing, and moving windows"],
-    ["atomic-json-store", "Python", "https://github.com/GreyforgeLabs/atomic-json-store", "https://github.com/GreyforgeLabs/atomic-json-store#readme", "Atomic, cross-process locked, schema-versioned JSON persistence for Python"],
-    ["node-healthcheck", "Shell", "https://github.com/GreyforgeLabs/node-healthcheck", "https://github.com/GreyforgeLabs/node-healthcheck#readme", "Single-script Linux host health checks with JSON output, status exit codes, and multi-node SSH aggregation"],
-    ["service-cartographer", "Python", "https://github.com/GreyforgeLabs/service-cartographer", "https://github.com/GreyforgeLabs/service-cartographer#readme", "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata"],
-    ["devcap", "Python", "https://github.com/GreyforgeLabs/devcap", "https://github.com/GreyforgeLabs/devcap#readme", "Scans a development environment for installed tools, versions, paths, and missing requirements"],
-    ["memory-quality-gate", "Python", "https://github.com/GreyforgeLabs/memory-quality-gate", "https://github.com/GreyforgeLabs/memory-quality-gate#readme", "Scores memory candidates with deterministic heuristics before long-term storage"],
-    ["sqlite-checkpoint", "Python", "https://github.com/GreyforgeLabs/sqlite-checkpoint", "https://github.com/GreyforgeLabs/sqlite-checkpoint#readme", "Wraps SQLite WAL checkpoint and online backup APIs in a CLI"],
-    ["cooldown-guard", "Rust", "https://github.com/GreyforgeLabs/cooldown-guard", "https://github.com/GreyforgeLabs/cooldown-guard#readme", "Enforces minimum intervals for cron jobs, recurring commands, and repair loops"],
-    ["voiceops", "Node.js", "https://github.com/GreyforgeLabs/voiceops", "https://github.com/GreyforgeLabs/voiceops#readme", "Runs a full-duplex Discord voice loop for agent gateways"]
+    ["reprieve", "QML", "https://github.com/GreyforgeLabs/reprieve", "https://github.com/GreyforgeLabs/reprieve#readme", "Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was", "desktop"],
+    ["omarchy-hotbar", "QML", "https://github.com/GreyforgeLabs/omarchy-hotbar", "https://github.com/GreyforgeLabs/omarchy-hotbar#readme", "Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer", "desktop"],
+    ["omarchy-grabbar", "C++", "https://github.com/GreyforgeLabs/omarchy-grabbar", "https://github.com/GreyforgeLabs/omarchy-grabbar#readme", "Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back", "desktop"],
+    ["node-healthcheck", "Shell", "https://github.com/GreyforgeLabs/node-healthcheck", "https://github.com/GreyforgeLabs/node-healthcheck#readme", "One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation", "operator"],
+    ["service-cartographer", "Python", "https://github.com/GreyforgeLabs/service-cartographer", "https://github.com/GreyforgeLabs/service-cartographer#readme", "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata", "operator"],
+    ["devcap", "Python", "https://github.com/GreyforgeLabs/devcap", "https://github.com/GreyforgeLabs/devcap#readme", "Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown", "operator"],
+    ["sqlite-checkpoint", "Python", "https://github.com/GreyforgeLabs/sqlite-checkpoint", "https://github.com/GreyforgeLabs/sqlite-checkpoint#readme", "CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library", "operator"],
+    ["cooldown-guard", "Rust", "https://github.com/GreyforgeLabs/cooldown-guard", "https://github.com/GreyforgeLabs/cooldown-guard#readme", "SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops", "operator"],
+    ["atomic-json-store", "Python", "https://github.com/GreyforgeLabs/atomic-json-store", "https://github.com/GreyforgeLabs/atomic-json-store#readme", "Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies", "operator"],
+    ["memory-quality-gate", "Python", "https://github.com/GreyforgeLabs/memory-quality-gate", "https://github.com/GreyforgeLabs/memory-quality-gate#readme", "Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage", "agent"],
+    ["voiceops", "Node.js", "https://github.com/GreyforgeLabs/voiceops", "https://github.com/GreyforgeLabs/voiceops#readme", "Full-duplex Discord voice loop for agent gateways", "agent"]
   ],
   "archived_specs": [
-    ["sley-legacy", "Shell", "https://github.com/GreyforgeLabs/sley-legacy", "https://github.com/GreyforgeLabs/sley-legacy#readme", "Public Sley 1.2 legacy lineage; completed, frozen human-readable language and historical ecosystem"],
+    ["sley-legacy", "Shell", "https://github.com/GreyforgeLabs/sley-legacy", "https://github.com/GreyforgeLabs/sley-legacy#readme", "Sley 1.2 legacy lineage: the completed, frozen human-readable predecessor of Sley 2, kept for history and existing users"],
     ["pcam", "Spec", "https://github.com/GreyforgeLabs/pcam", "https://github.com/GreyforgeLabs/pcam#readme", "Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed"],
     ["geminibot", "Node.js", "https://github.com/GreyforgeLabs/geminibot", "https://github.com/GreyforgeLabs/geminibot#readme", "Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned"]
   ],
   "proof_trail": [
-    ["Repository source, documentation, and license records", "https://github.com/GreyforgeLabs"],
+    ["Sley releases", "https://github.com/sley-lang/sley/releases"],
     ["Sley 1.2.1 legacy source tag", "https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1"],
     ["PCAM retired-draft status", "https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md"]
   ]

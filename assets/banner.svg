@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Greyforge Labs</title>
+  <desc id="d">Autonomy, Engineered. Sley, Omarchy desktop tools, operator utilities, and agent infrastructure.</desc>
+  <style>
+    .ember { animation: rise 7s linear infinite; opacity: 0; }
+    .e2 { animation-delay: -1.4s; animation-duration: 8.5s; }
+    .e3 { animation-delay: -2.8s; animation-duration: 6.2s; }
+    .e4 { animation-delay: -4.1s; animation-duration: 9s; }
+    .e5 { animation-delay: -5.5s; animation-duration: 7.6s; }
+    .e6 { animation-delay: -3.3s; animation-duration: 10s; }
+    .glow { animation: pulse 6s ease-in-out infinite alternate; transform-origin: center; }
+    .sweep { animation: sweep 9s ease-in-out infinite; }
+    @keyframes rise {
+      0% { transform: translateY(0); opacity: 0; }
+      12% { opacity: 0.9; }
+      100% { transform: translateY(-260px); opacity: 0; }
+    }
+    @keyframes pulse { from { opacity: 0.55; } to { opacity: 1; } }
+    @keyframes sweep { 0%, 100% { transform: translateX(-420px); } 50% { transform: translateX(420px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .ember, .glow, .sweep { animation: none; }
+      .ember { opacity: 0.6; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="word" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f2b84b"/>
+      <stop offset="0.35" stop-color="#ff7a45"/>
+      <stop offset="0.65" stop-color="#ee7890"/>
+      <stop offset="1" stop-color="#54d6d0"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#54d6d0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#f2b84b"/>
+      <stop offset="1" stop-color="#ee7890" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="amber" cx="0.18" cy="0.9" r="0.55">
+      <stop offset="0" stop-color="#ff7a45" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff7a45" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan" cx="0.85" cy="0.1" r="0.55">
+      <stop offset="0" stop-color="#54d6d0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#54d6d0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rose" cx="0.55" cy="1" r="0.45">
+      <stop offset="0" stop-color="#ee7890" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#ee7890" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#263544" stroke-width="1" stroke-opacity="0.45"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="#0b0f14"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <g class="glow">
+      <rect width="1200" height="320" fill="url(#amber)"/>
+      <rect width="1200" height="320" fill="url(#cyan)"/>
+      <rect width="1200" height="320" fill="url(#rose)"/>
+    </g>
+    <g fill="#f2b84b">
+      <circle class="ember" cx="140" cy="330" r="2.5"/>
+      <circle class="ember e2" cx="260" cy="330" r="1.8" fill="#ff7a45"/>
+      <circle class="ember e3" cx="420" cy="330" r="2.2"/>
+      <circle class="ember e4" cx="780" cy="330" r="1.6" fill="#ee7890"/>
+      <circle class="ember e5" cx="960" cy="330" r="2.4" fill="#54d6d0"/>
+      <circle class="ember e6" cx="1080" cy="330" r="1.8"/>
+      <circle class="ember e3" cx="620" cy="330" r="1.5" fill="#ff7a45"/>
+      <circle class="ember e5" cx="330" cy="330" r="1.4" fill="#54d6d0"/>
+    </g>
+    <text x="600" y="150" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="6" fill="url(#word)">GREYFORGE LABS</text>
+    <g class="sweep"><rect x="560" y="176" width="80" height="3" rx="1.5" fill="#f2b84b"/></g>
+    <rect x="300" y="176" width="600" height="3" rx="1.5" fill="url(#rule)" opacity="0.8"/>
+    <text x="600" y="228" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="600" fill="#edf4f8">Autonomy, Engineered.</text>
+    <text x="600" y="272" text-anchor="middle" font-family="ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace" font-size="17" letter-spacing="1.5" fill="#9aa8b5">
+      <tspan fill="#54d6d0">sley</tspan> · <tspan fill="#f2b84b">omarchy tools</tspan> · <tspan fill="#7edc89">operator utilities</tspan> · <tspan fill="#ee7890">agent infrastructure</tspan>
+    </text>
+    <rect x="1" y="1" width="1198" height="318" rx="17" fill="none" stroke="#263544"/>
+  </g>
+</svg>

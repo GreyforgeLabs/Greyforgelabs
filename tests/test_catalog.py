@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from check_catalog_links import catalog_urls, check_url, generated_surface_urls  # noqa: E402
-from generate_catalog import load_catalog, render_index, render_readme, validate_catalog  # noqa: E402
+from generate_catalog import load_catalog, render_cards, render_index, render_readme, validate_catalog  # noqa: E402
 
 
 class _Response:
@@ -45,6 +45,27 @@ class CatalogTests(unittest.TestCase):
     def test_generated_surfaces_match_catalog(self) -> None:
         self.assertEqual((ROOT / "README.md").read_text(), render_readme(self.data))
         self.assertEqual((ROOT / "index.html").read_text(), render_index(self.data))
+        for path, content in render_cards(self.data).items():
+            self.assertEqual(path.read_text(), content)
+
+    def test_every_active_project_has_a_card_in_the_readme(self) -> None:
+        readme = render_readme(self.data)
+        for path in render_cards(self.data):
+            self.assertIn(f"assets/cards/{path.name}", readme)
+            self.assertTrue(path.read_text().startswith("<svg "))
+
+    def test_sley_is_the_linked_flagship(self) -> None:
+        self.assertEqual([row[0] for row in self.data["flagship"]], ["Sley"])
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            self.assertIn("https://sleylang.org", rendered)
+            self.assertIn("https://github.com/sley-lang", rendered)
+        self.assertIn("https://github.com/sley-lang/sley", render_readme(self.data))
+
+    def test_unknown_category_is_rejected(self) -> None:
+        broken = copy.deepcopy(self.data)
+        broken["openforge_utilities"][0][5] = "misc"
+        with self.assertRaisesRegex(ValueError, "category must be one of"):
+            validate_catalog(broken)
 
     def test_active_catalog_contains_only_the_approved_oss_tools(self) -> None:
         expected = {
@@ -76,7 +97,7 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(self.data["products"], [])
         surfaces = [json.dumps(self.data), render_readme(self.data), render_index(self.data)]
         retired = (
-            "zjx", "sley 2", "sley2", "sleylang.org", "forgeshield", "forgestrike",
+            "zjx", "forgeshield", "forgestrike",
             "forgequant", "agent cards", "forgevideo", "forgeclaw", "/store",
             "privacy tools", "privacy utilities", "market research", "private-package",
             "software products", "llms.txt",
@@ -113,7 +134,7 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("A &lt;tool&gt;", rendered)
 
     def test_empty_required_tables_are_still_rejected(self) -> None:
-        for key in ("surfaces", "openforge_utilities", "archived_specs", "proof_trail"):
+        for key in ("surfaces", "flagship", "openforge_utilities", "archived_specs", "proof_trail"):
             with self.subTest(key=key):
                 broken = copy.deepcopy(self.data)
                 broken[key] = []
@@ -129,7 +150,7 @@ class CatalogTests(unittest.TestCase):
     def test_invalid_schema_is_rejected(self) -> None:
         broken = copy.deepcopy(self.data)
         broken["openforge_utilities"][0] = ["too", "short"]
-        with self.assertRaisesRegex(ValueError, "exactly 5 strings"):
+        with self.assertRaisesRegex(ValueError, "exactly 6 strings"):
             validate_catalog(broken)
 
     def test_duplicate_names_are_rejected(self) -> None:
