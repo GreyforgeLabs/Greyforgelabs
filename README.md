@@ -4,7 +4,7 @@
 
 <img src="assets/banner.svg" alt="Greyforge Labs. Autonomy, Engineered." width="100%">
 
-<a href="https://greyforge.tech"><img alt="greyforge.tech" src="https://img.shields.io/badge/greyforge.tech-F2B84B?style=for-the-badge&logo=firefoxbrowser&logoColor=000000"></a> <a href="https://sleylang.org"><img alt="sleylang.org" src="https://img.shields.io/badge/sleylang.org-54D6D0?style=for-the-badge"></a> <a href="https://github.com/sley-lang"><img alt="sley-lang" src="https://img.shields.io/badge/sley--lang-EE7890?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://github.com/GreyforgeLabs"><img alt="GreyforgeLabs" src="https://img.shields.io/badge/GreyforgeLabs-7EDC89?style=for-the-badge&logo=github&logoColor=000000"></a>
+<a href="https://greyforge.tech"><img alt="greyforge.tech" src="https://img.shields.io/badge/greyforge.tech-F2B84B?style=for-the-badge&logo=firefoxbrowser&logoColor=000000"></a> <a href="https://github.com/sley-lang"><img alt="sley-lang" src="https://img.shields.io/badge/sley--lang-EE7890?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://github.com/GreyforgeLabs"><img alt="GreyforgeLabs" src="https://img.shields.io/badge/GreyforgeLabs-7EDC89?style=for-the-badge&logo=github&logoColor=000000"></a>
 
 </div>
 
@@ -21,7 +21,7 @@
 </td>
 <td valign="middle">
 <p>A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit.</p>
-<p><a href="https://github.com/sley-lang/sley"><b>Source</b></a> · <a href="https://sleylang.org"><b>sleylang.org</b></a> · <a href="https://github.com/sley-lang"><b>sley-lang on GitHub</b></a> · <a href="https://github.com/sley-lang/sley/releases"><b>Releases</b></a></p>
+<p><a href="https://github.com/sley-lang/sley"><b>Source</b></a> · <a href="https://github.com/sley-lang"><b>sley-lang on GitHub</b></a> · <a href="https://github.com/sley-lang/sley/releases"><b>Releases</b></a> · <a href="https://github.com/sley-lang/sley/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a></p>
 <p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <img alt="Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square"></p>
 </td>
 </tr>

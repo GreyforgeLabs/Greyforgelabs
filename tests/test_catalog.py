@@ -57,7 +57,6 @@ class CatalogTests(unittest.TestCase):
     def test_sley_is_the_linked_flagship(self) -> None:
         self.assertEqual([row[0] for row in self.data["flagship"]], ["Sley"])
         for rendered in (render_readme(self.data), render_index(self.data)):
-            self.assertIn("https://sleylang.org", rendered)
             self.assertIn("https://github.com/sley-lang", rendered)
         self.assertIn("https://github.com/sley-lang/sley", render_readme(self.data))
 
@@ -111,6 +110,11 @@ class CatalogTests(unittest.TestCase):
             ["Sley 1.2.1 legacy source tag", "https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1"],
             self.data["proof_trail"],
         )
+
+    def test_readme_link_inventory_stops_at_html_attribute_quotes(self) -> None:
+        for url in generated_surface_urls():
+            self.assertNotIn('"', url)
+            self.assertNotIn("'", url)
 
     def test_catalog_links_do_not_depend_on_social_network_access(self) -> None:
         for rendered in (render_readme(self.data), render_index(self.data)):
