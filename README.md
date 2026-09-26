@@ -2,69 +2,136 @@
 
 <div align="center">
 
-# Greyforge Labs
+<img src="assets/banner.svg" alt="Greyforge Labs. Autonomy, Engineered." width="100%">
 
-**Autonomy, Engineered.**
-
-[![Website](https://img.shields.io/badge/greyforge.tech-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://greyforge.tech)
-[![GitHub](https://img.shields.io/badge/Open_Source-1f2937?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GreyforgeLabs)
-
-Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.
+<a href="https://greyforge.tech"><img alt="greyforge.tech" src="https://img.shields.io/badge/greyforge.tech-F2B84B?style=for-the-badge&logo=firefoxbrowser&logoColor=000000"></a> <a href="https://github.com/sley-lang"><img alt="sley-lang" src="https://img.shields.io/badge/sley--lang-EE7890?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://github.com/GreyforgeLabs"><img alt="GreyforgeLabs" src="https://img.shields.io/badge/GreyforgeLabs-7EDC89?style=for-the-badge&logo=github&logoColor=000000"></a>
 
 </div>
 
----
+<p align="center"><b>Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.</b></p>
 
-## What Greyforge Labs Is
+<img src="assets/divider.svg" alt="" width="100%">
 
-Greyforge Labs builds open-source desktop and operator tools. This GitHub catalog covers active OSS utilities and clearly labeled historical projects. See each repository for its source, license, documentation, and maintenance status.
+## Sley: machine-native programming for AI agents
 
-## Public Surfaces
+<table>
+<tr>
+<td width="42%" valign="middle">
+<a href="https://github.com/sley-lang/sley"><img src="assets/cards/sley.svg" alt="Sley" width="100%"></a>
+</td>
+<td valign="middle">
+<p>A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit.</p>
+<p><a href="https://github.com/sley-lang/sley"><b>Source</b></a> · <a href="https://github.com/sley-lang"><b>sley-lang on GitHub</b></a> · <a href="https://github.com/sley-lang/sley/releases"><b>Releases</b></a> · <a href="https://github.com/sley-lang/sley/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a></p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <img alt="Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square"></p>
+</td>
+</tr>
+</table>
 
-| Surface | Link | What Lives There |
-|---|---|---|
-| GitHub | [github.com/GreyforgeLabs](https://github.com/GreyforgeLabs) | Open-source repositories, documentation, and project history |
-| Greyforge | [greyforge.tech](https://greyforge.tech) | Canonical Greyforge Labs website |
+## Omarchy desktop tools
 
-## Active Open-Source Tools
+Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based Arch Linux setup.
 
-| Project | Stack | Repo | Documentation | What It Does |
-|---|---|---|---|---|
-| reprieve | QML | [GitHub](https://github.com/GreyforgeLabs/reprieve) | [Docs](https://github.com/GreyforgeLabs/reprieve#readme) | Gives Super+W a safety net on Omarchy by hiding windows instead of terminating them, with a keystroke to restore them |
-| omarchy-hotbar | QML | [GitHub](https://github.com/GreyforgeLabs/omarchy-hotbar) | [Docs](https://github.com/GreyforgeLabs/omarchy-hotbar#readme) | Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer |
-| omarchy-grabbar | C++ | [GitHub](https://github.com/GreyforgeLabs/omarchy-grabbar) | [Docs](https://github.com/GreyforgeLabs/omarchy-grabbar#readme) | Adds mouse-driven window controls to Omarchy for minimizing, maximizing, closing, and moving windows |
-| atomic-json-store | Python | [GitHub](https://github.com/GreyforgeLabs/atomic-json-store) | [Docs](https://github.com/GreyforgeLabs/atomic-json-store#readme) | Atomic, cross-process locked, schema-versioned JSON persistence for Python |
-| node-healthcheck | Shell | [GitHub](https://github.com/GreyforgeLabs/node-healthcheck) | [Docs](https://github.com/GreyforgeLabs/node-healthcheck#readme) | Single-script Linux host health checks with JSON output, status exit codes, and multi-node SSH aggregation |
-| service-cartographer | Python | [GitHub](https://github.com/GreyforgeLabs/service-cartographer) | [Docs](https://github.com/GreyforgeLabs/service-cartographer#readme) | Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata |
-| devcap | Python | [GitHub](https://github.com/GreyforgeLabs/devcap) | [Docs](https://github.com/GreyforgeLabs/devcap#readme) | Scans a development environment for installed tools, versions, paths, and missing requirements |
-| memory-quality-gate | Python | [GitHub](https://github.com/GreyforgeLabs/memory-quality-gate) | [Docs](https://github.com/GreyforgeLabs/memory-quality-gate#readme) | Scores memory candidates with deterministic heuristics before long-term storage |
-| sqlite-checkpoint | Python | [GitHub](https://github.com/GreyforgeLabs/sqlite-checkpoint) | [Docs](https://github.com/GreyforgeLabs/sqlite-checkpoint#readme) | Wraps SQLite WAL checkpoint and online backup APIs in a CLI |
-| cooldown-guard | Rust | [GitHub](https://github.com/GreyforgeLabs/cooldown-guard) | [Docs](https://github.com/GreyforgeLabs/cooldown-guard#readme) | Enforces minimum intervals for cron jobs, recurring commands, and repair loops |
-| voiceops | Node.js | [GitHub](https://github.com/GreyforgeLabs/voiceops) | [Docs](https://github.com/GreyforgeLabs/voiceops#readme) | Runs a full-duplex Discord voice loop for agent gateways |
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/GreyforgeLabs/reprieve"><img src="assets/cards/reprieve.svg" alt="reprieve" width="100%"></a>
+<p>Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was.</p>
+<p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/reprieve#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/GreyforgeLabs/omarchy-hotbar"><img src="assets/cards/omarchy-hotbar.svg" alt="omarchy-hotbar" width="100%"></a>
+<p>Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer.</p>
+<p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-hotbar#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><img src="assets/cards/omarchy-grabbar.svg" alt="omarchy-grabbar" width="100%"></a>
+<p>Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back.</p>
+<p><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-grabbar#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+</table>
+
+## Operator utilities
+
+Small tools for people who run their own Linux hosts, scheduled jobs, and services.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/node-healthcheck"><img src="assets/cards/node-healthcheck.svg" alt="node-healthcheck" width="100%"></a>
+<p>One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation.</p>
+<p><img alt="Shell" src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white"> <a href="https://github.com/GreyforgeLabs/node-healthcheck#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/service-cartographer"><img src="assets/cards/service-cartographer.svg" alt="service-cartographer" width="100%"></a>
+<p>Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/service-cartographer#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/devcap"><img src="assets/cards/devcap.svg" alt="devcap" width="100%"></a>
+<p>Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/devcap#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><img src="assets/cards/sqlite-checkpoint.svg" alt="sqlite-checkpoint" width="100%"></a>
+<p>CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/cooldown-guard"><img src="assets/cards/cooldown-guard.svg" alt="cooldown-guard" width="100%"></a>
+<p>SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops.</p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/cooldown-guard#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/atomic-json-store"><img src="assets/cards/atomic-json-store.svg" alt="atomic-json-store" width="100%"></a>
+<p>Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/atomic-json-store#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+</table>
+
+## Agent infrastructure
+
+Building blocks for AI agent systems.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/memory-quality-gate"><img src="assets/cards/memory-quality-gate.svg" alt="memory-quality-gate" width="100%"></a>
+<p>Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/memory-quality-gate#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/voiceops"><img src="assets/cards/voiceops.svg" alt="voiceops" width="100%"></a>
+<p>Full-duplex Discord voice loop for agent gateways.</p>
+<p><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"> <a href="https://github.com/GreyforgeLabs/voiceops#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+</table>
+
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## Historical Projects
 
-| Project | Stack | Repo | Documentation | Status |
-|---|---|---|---|---|
-| sley-legacy | Shell | [GitHub](https://github.com/GreyforgeLabs/sley-legacy) | [Docs](https://github.com/GreyforgeLabs/sley-legacy#readme) | Public Sley 1.2 legacy lineage; completed, frozen human-readable language and historical ecosystem |
-| pcam | Spec | [GitHub](https://github.com/GreyforgeLabs/pcam) | [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
-| geminibot | Node.js | [GitHub](https://github.com/GreyforgeLabs/geminibot) | [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
+Finished or retired work, kept public for reference.
 
-## Repository Records
+| Project | Stack | Status |
+|---|---|---|
+| [sley-legacy](https://github.com/GreyforgeLabs/sley-legacy) · [Docs](https://github.com/GreyforgeLabs/sley-legacy#readme) | Shell | Sley 1.2 legacy lineage: the completed, frozen human-readable predecessor of Sley 2, kept for history and existing users |
+| [pcam](https://github.com/GreyforgeLabs/pcam) · [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Spec | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
+| [geminibot](https://github.com/GreyforgeLabs/geminibot) · [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Node.js | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
 
-Use repository documentation and release records for project-specific claims:
-
-- [Repository source, documentation, and license records](https://github.com/GreyforgeLabs)
-- [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1)
-- [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
-
-## Attribution
-
-Built by [Greyforge Labs](https://greyforge.tech/about). Individual authorship and license notices remain in each repository.
+Records: [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
 
 <div align="center">
 
-[greyforge.tech](https://greyforge.tech) - [GitHub](https://github.com/GreyforgeLabs)
+<img src="assets/divider.svg" alt="" width="100%">
+
+Built by [Greyforge Labs](https://greyforge.tech/about). License and authorship notices live in each repository.
 
 **Autonomy, Engineered.**
 

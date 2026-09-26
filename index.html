@@ -4,37 +4,183 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Greyforge Labs on GitHub | Open-Source Tools and Historical Projects</title>
-  <meta name="description" content="Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.">
+  <title>Greyforge Labs on GitHub | Sley, Omarchy Tools, and Open-Source Operator Utilities</title>
+  <meta name="description" content="Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://greyforge.tech/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Greyforge Labs on GitHub">
-  <meta property="og:description" content="Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.">
+  <meta property="og:description" content="Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.">
   <meta property="og:url" content="https://greyforgelabs.github.io/Greyforgelabs/">
   <meta property="og:image" content="https://avatars.githubusercontent.com/u/252855775?v=4">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Greyforge Labs on GitHub">
-  <meta name="twitter:description" content="Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.">
+  <meta name="twitter:description" content="Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.">
   <meta name="theme-color" content="#0b0f14">
   <link rel="stylesheet" href="./assets/github-page.css">
   <script type="application/ld+json">
+[
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Greyforge Labs",
+    "slogan": "Autonomy, Engineered.",
+    "description": "Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.",
     "url": "https://greyforge.tech",
     "logo": "https://avatars.githubusercontent.com/u/252855775?v=4",
     "sameAs": [
+      "https://github.com/sley-lang",
       "https://github.com/GreyforgeLabs"
     ],
     "knowsAbout": [
-      "open source utilities",
-      "Linux desktop tools",
-      "operator tools",
-      "developer tooling"
+      "Sley programming language",
+      "machine-native programming",
+      "AI agents",
+      "Omarchy",
+      "Hyprland",
+      "Linux operator tools"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Greyforge Labs open-source projects",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Sley",
+          "codeRepository": "https://github.com/sley-lang/sley",
+          "programmingLanguage": "Rust",
+          "description": "A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "reprieve",
+          "codeRepository": "https://github.com/GreyforgeLabs/reprieve",
+          "programmingLanguage": "QML",
+          "description": "Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "omarchy-hotbar",
+          "codeRepository": "https://github.com/GreyforgeLabs/omarchy-hotbar",
+          "programmingLanguage": "QML",
+          "description": "Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "omarchy-grabbar",
+          "codeRepository": "https://github.com/GreyforgeLabs/omarchy-grabbar",
+          "programmingLanguage": "C++",
+          "description": "Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "node-healthcheck",
+          "codeRepository": "https://github.com/GreyforgeLabs/node-healthcheck",
+          "programmingLanguage": "Shell",
+          "description": "One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "service-cartographer",
+          "codeRepository": "https://github.com/GreyforgeLabs/service-cartographer",
+          "programmingLanguage": "Python",
+          "description": "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "devcap",
+          "codeRepository": "https://github.com/GreyforgeLabs/devcap",
+          "programmingLanguage": "Python",
+          "description": "Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "sqlite-checkpoint",
+          "codeRepository": "https://github.com/GreyforgeLabs/sqlite-checkpoint",
+          "programmingLanguage": "Python",
+          "description": "CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "cooldown-guard",
+          "codeRepository": "https://github.com/GreyforgeLabs/cooldown-guard",
+          "programmingLanguage": "Rust",
+          "description": "SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "atomic-json-store",
+          "codeRepository": "https://github.com/GreyforgeLabs/atomic-json-store",
+          "programmingLanguage": "Python",
+          "description": "Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "memory-quality-gate",
+          "codeRepository": "https://github.com/GreyforgeLabs/memory-quality-gate",
+          "programmingLanguage": "Python",
+          "description": "Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "voiceops",
+          "codeRepository": "https://github.com/GreyforgeLabs/voiceops",
+          "programmingLanguage": "Node.js",
+          "description": "Full-duplex Discord voice loop for agent gateways"
+        }
+      }
     ]
   }
+]
   </script>
 </head>
 <body>
@@ -44,6 +190,7 @@
       <span>Greyforge Labs</span>
     </a>
     <nav aria-label="Primary">
+      <a href="#flagship-title">Sley</a>
       <a href="#openforge-title">Open Source</a>
       <a href="#archive-title">History</a>
       <a href="https://github.com/GreyforgeLabs">GitHub</a>
@@ -57,17 +204,20 @@
         <h1 id="hero-title">Greyforge Labs</h1>
         <p class="tagline">Autonomy, Engineered.</p>
         <p class="hero-text">
-          Open-source desktop and operator tools from Greyforge Labs, with public Sley 1.2 legacy and clearly labeled historical projects.
+          Greyforge Labs builds Sley, a machine-native programming language for AI agents, and open-source tools for Omarchy desktops, self-hosted operations, and agent infrastructure.
         </p>
         <div class="hero-actions" aria-label="Main links">
           <a class="button primary" href="https://greyforge.tech">Visit Greyforge</a>
+          <a class="button" href="https://github.com/sley-lang/sley">Sley</a>
           <a class="button" href="https://github.com/GreyforgeLabs">GitHub Repos</a>
           <a class="button" href="#openforge-title">Explore Tools</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Surface map">
+        <span>Language</span>
+        <strong>Sley, machine-native programming</strong>
         <span>Open Source</span>
-        <strong>Desktop and operator tools</strong>
+        <strong>Omarchy, operator, and agent tools</strong>
         <span>History</span>
         <strong>Sley legacy and archival projects</strong>
         <span>Documentation</span>
@@ -77,6 +227,19 @@
       </aside>
     </section>
 
+    <section class="section" aria-labelledby="flagship-title">
+      <div class="section-heading">
+        <p class="eyebrow">Flagship</p>
+        <h2 id="flagship-title">Sley</h2>
+      </div>
+      <div class="card-grid flagship-grid">
+        <a class="card" href="https://github.com/sley-lang">
+          <span class="card-kicker">Flagship</span>
+          <h3>Sley</h3>
+          <p>A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit.</p>
+        </a>
+      </div>
+    </section>
 
     <section class="section" aria-labelledby="openforge-title">
       <div class="section-heading">
@@ -84,17 +247,17 @@
         <h2 id="openforge-title">Active Open-Source Tools</h2>
       </div>
       <div class="repo-list">
-        <a href="https://github.com/GreyforgeLabs/reprieve"><strong>reprieve</strong><span>Gives Super+W a safety net on Omarchy by hiding windows instead of terminating them, with a keystroke to restore them</span></a>
+        <a href="https://github.com/GreyforgeLabs/reprieve"><strong>reprieve</strong><span>Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was</span></a>
         <a href="https://github.com/GreyforgeLabs/omarchy-hotbar"><strong>omarchy-hotbar</strong><span>Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer</span></a>
-        <a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><strong>omarchy-grabbar</strong><span>Adds mouse-driven window controls to Omarchy for minimizing, maximizing, closing, and moving windows</span></a>
-        <a href="https://github.com/GreyforgeLabs/atomic-json-store"><strong>atomic-json-store</strong><span>Atomic, cross-process locked, schema-versioned JSON persistence for Python</span></a>
-        <a href="https://github.com/GreyforgeLabs/node-healthcheck"><strong>node-healthcheck</strong><span>Single-script Linux host health checks with JSON output, status exit codes, and multi-node SSH aggregation</span></a>
+        <a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><strong>omarchy-grabbar</strong><span>Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back</span></a>
+        <a href="https://github.com/GreyforgeLabs/node-healthcheck"><strong>node-healthcheck</strong><span>One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation</span></a>
         <a href="https://github.com/GreyforgeLabs/service-cartographer"><strong>service-cartographer</strong><span>Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata</span></a>
-        <a href="https://github.com/GreyforgeLabs/devcap"><strong>devcap</strong><span>Scans a development environment for installed tools, versions, paths, and missing requirements</span></a>
-        <a href="https://github.com/GreyforgeLabs/memory-quality-gate"><strong>memory-quality-gate</strong><span>Scores memory candidates with deterministic heuristics before long-term storage</span></a>
-        <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><strong>sqlite-checkpoint</strong><span>Wraps SQLite WAL checkpoint and online backup APIs in a CLI</span></a>
-        <a href="https://github.com/GreyforgeLabs/cooldown-guard"><strong>cooldown-guard</strong><span>Enforces minimum intervals for cron jobs, recurring commands, and repair loops</span></a>
-        <a href="https://github.com/GreyforgeLabs/voiceops"><strong>voiceops</strong><span>Runs a full-duplex Discord voice loop for agent gateways</span></a>
+        <a href="https://github.com/GreyforgeLabs/devcap"><strong>devcap</strong><span>Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown</span></a>
+        <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><strong>sqlite-checkpoint</strong><span>CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library</span></a>
+        <a href="https://github.com/GreyforgeLabs/cooldown-guard"><strong>cooldown-guard</strong><span>SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops</span></a>
+        <a href="https://github.com/GreyforgeLabs/atomic-json-store"><strong>atomic-json-store</strong><span>Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies</span></a>
+        <a href="https://github.com/GreyforgeLabs/memory-quality-gate"><strong>memory-quality-gate</strong><span>Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage</span></a>
+        <a href="https://github.com/GreyforgeLabs/voiceops"><strong>voiceops</strong><span>Full-duplex Discord voice loop for agent gateways</span></a>
       </div>
     </section>
 
@@ -104,7 +267,7 @@
         <h2 id="archive-title">Historical Projects</h2>
       </div>
       <div class="repo-list archive-list">
-        <a href="https://github.com/GreyforgeLabs/sley-legacy"><strong>sley-legacy</strong><span>Public Sley 1.2 legacy lineage; completed, frozen human-readable language and historical ecosystem</span></a>
+        <a href="https://github.com/GreyforgeLabs/sley-legacy"><strong>sley-legacy</strong><span>Sley 1.2 legacy lineage: the completed, frozen human-readable predecessor of Sley 2, kept for history and existing users</span></a>
         <a href="https://github.com/GreyforgeLabs/pcam"><strong>pcam</strong><span>Retired archival draft; final published candidate v3.0.0-draft.1; no conformance class claimed</span></a>
         <a href="https://github.com/GreyforgeLabs/geminibot"><strong>geminibot</strong><span>Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned</span></a>
       </div>
@@ -116,7 +279,7 @@
         <h2 id="proof-title">Repository Records</h2>
       </div>
       <div class="link-row">
-        <a href="https://github.com/GreyforgeLabs">Repository source, documentation, and license records</a>
+        <a href="https://github.com/sley-lang/sley/releases">Sley releases</a>
         <a href="https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1">Sley 1.2.1 legacy source tag</a>
         <a href="https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md">PCAM retired-draft status</a>
       </div>
