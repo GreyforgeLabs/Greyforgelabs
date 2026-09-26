@@ -45,7 +45,7 @@ def catalog_urls(data: object) -> list[str]:
 
 def generated_surface_urls() -> set[str]:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    markdown_urls = set(re.findall(r"https://[^\s)>]+", readme))
+    markdown_urls = set(re.findall(r"https://[^\s)>\"']+", readme))
     parser = _ExternalLinkParser()
     parser.feed((ROOT / "index.html").read_text(encoding="utf-8"))
     return markdown_urls | parser.urls

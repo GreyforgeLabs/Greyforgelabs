@@ -344,3 +344,11 @@ footer span {
     grid-template-columns: 1fr;
   }
 }
+
+.flagship-grid {
+  grid-template-columns: 1fr;
+}
+
+.flagship-grid .card {
+  border-color: var(--cyan);
+}
