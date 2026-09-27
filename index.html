@@ -98,7 +98,7 @@
           "name": "node-healthcheck",
           "codeRepository": "https://github.com/GreyforgeLabs/node-healthcheck",
           "programmingLanguage": "Shell",
-          "description": "One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation"
+          "description": "One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable"
         }
       },
       {
@@ -109,7 +109,7 @@
           "name": "service-cartographer",
           "codeRepository": "https://github.com/GreyforgeLabs/service-cartographer",
           "programmingLanguage": "Python",
-          "description": "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata"
+          "description": "Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit"
         }
       },
       {
@@ -117,10 +117,10 @@
         "position": 7,
         "item": {
           "@type": "SoftwareSourceCode",
-          "name": "devcap",
-          "codeRepository": "https://github.com/GreyforgeLabs/devcap",
+          "name": "sqlite-checkpoint",
+          "codeRepository": "https://github.com/GreyforgeLabs/sqlite-checkpoint",
           "programmingLanguage": "Python",
-          "description": "Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown"
+          "description": "Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance"
         }
       },
       {
@@ -128,10 +128,10 @@
         "position": 8,
         "item": {
           "@type": "SoftwareSourceCode",
-          "name": "sqlite-checkpoint",
-          "codeRepository": "https://github.com/GreyforgeLabs/sqlite-checkpoint",
-          "programmingLanguage": "Python",
-          "description": "CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library"
+          "name": "cooldown-guard",
+          "codeRepository": "https://github.com/GreyforgeLabs/cooldown-guard",
+          "programmingLanguage": "Rust",
+          "description": "SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits"
         }
       },
       {
@@ -139,26 +139,15 @@
         "position": 9,
         "item": {
           "@type": "SoftwareSourceCode",
-          "name": "cooldown-guard",
-          "codeRepository": "https://github.com/GreyforgeLabs/cooldown-guard",
-          "programmingLanguage": "Rust",
-          "description": "SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops"
+          "name": "atomic-json-store",
+          "codeRepository": "https://github.com/GreyforgeLabs/atomic-json-store",
+          "programmingLanguage": "Python",
+          "description": "Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects"
         }
       },
       {
         "@type": "ListItem",
         "position": 10,
-        "item": {
-          "@type": "SoftwareSourceCode",
-          "name": "atomic-json-store",
-          "codeRepository": "https://github.com/GreyforgeLabs/atomic-json-store",
-          "programmingLanguage": "Python",
-          "description": "Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 11,
         "item": {
           "@type": "SoftwareSourceCode",
           "name": "slopbrake",
@@ -169,7 +158,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 12,
+        "position": 11,
         "item": {
           "@type": "SoftwareSourceCode",
           "name": "memory-quality-gate",
@@ -180,7 +169,7 @@
       },
       {
         "@type": "ListItem",
-        "position": 13,
+        "position": 12,
         "item": {
           "@type": "SoftwareSourceCode",
           "name": "voiceops",
@@ -261,12 +250,11 @@
         <a href="https://github.com/GreyforgeLabs/reprieve"><strong>reprieve</strong><span>Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was</span></a>
         <a href="https://github.com/GreyforgeLabs/omarchy-hotbar"><strong>omarchy-hotbar</strong><span>Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer</span></a>
         <a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><strong>omarchy-grabbar</strong><span>Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back</span></a>
-        <a href="https://github.com/GreyforgeLabs/node-healthcheck"><strong>node-healthcheck</strong><span>One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation</span></a>
-        <a href="https://github.com/GreyforgeLabs/service-cartographer"><strong>service-cartographer</strong><span>Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata</span></a>
-        <a href="https://github.com/GreyforgeLabs/devcap"><strong>devcap</strong><span>Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown</span></a>
-        <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><strong>sqlite-checkpoint</strong><span>CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library</span></a>
-        <a href="https://github.com/GreyforgeLabs/cooldown-guard"><strong>cooldown-guard</strong><span>SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops</span></a>
-        <a href="https://github.com/GreyforgeLabs/atomic-json-store"><strong>atomic-json-store</strong><span>Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies</span></a>
+        <a href="https://github.com/GreyforgeLabs/node-healthcheck"><strong>node-healthcheck</strong><span>One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable</span></a>
+        <a href="https://github.com/GreyforgeLabs/service-cartographer"><strong>service-cartographer</strong><span>Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit</span></a>
+        <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><strong>sqlite-checkpoint</strong><span>Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance</span></a>
+        <a href="https://github.com/GreyforgeLabs/cooldown-guard"><strong>cooldown-guard</strong><span>SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits</span></a>
+        <a href="https://github.com/GreyforgeLabs/atomic-json-store"><strong>atomic-json-store</strong><span>Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects</span></a>
         <a href="https://github.com/GreyforgeLabs/slopbrake"><strong>slopbrake</strong><span>MIT-licensed brakes for coding agents: catch tautological tests, commit review fixes, and hold one-way changes for a human</span></a>
         <a href="https://github.com/GreyforgeLabs/memory-quality-gate"><strong>memory-quality-gate</strong><span>Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage</span></a>
         <a href="https://github.com/GreyforgeLabs/voiceops"><strong>voiceops</strong><span>Full-duplex Discord voice loop for agent gateways</span></a>

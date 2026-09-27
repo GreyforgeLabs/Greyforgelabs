@@ -63,7 +63,7 @@
       "Shell",
       "https://github.com/GreyforgeLabs/node-healthcheck",
       "https://github.com/GreyforgeLabs/node-healthcheck#readme",
-      "One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation",
+      "One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable",
       "operator"
     ],
     [
@@ -71,15 +71,7 @@
       "Python",
       "https://github.com/GreyforgeLabs/service-cartographer",
       "https://github.com/GreyforgeLabs/service-cartographer#readme",
-      "Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata",
-      "operator"
-    ],
-    [
-      "devcap",
-      "Python",
-      "https://github.com/GreyforgeLabs/devcap",
-      "https://github.com/GreyforgeLabs/devcap#readme",
-      "Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown",
+      "Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit",
       "operator"
     ],
     [
@@ -87,7 +79,7 @@
       "Python",
       "https://github.com/GreyforgeLabs/sqlite-checkpoint",
       "https://github.com/GreyforgeLabs/sqlite-checkpoint#readme",
-      "CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library",
+      "Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance",
       "operator"
     ],
     [
@@ -95,7 +87,7 @@
       "Rust",
       "https://github.com/GreyforgeLabs/cooldown-guard",
       "https://github.com/GreyforgeLabs/cooldown-guard#readme",
-      "SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops",
+      "SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits",
       "operator"
     ],
     [
@@ -103,7 +95,7 @@
       "Python",
       "https://github.com/GreyforgeLabs/atomic-json-store",
       "https://github.com/GreyforgeLabs/atomic-json-store#readme",
-      "Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies",
+      "Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects",
       "operator"
     ],
     [
