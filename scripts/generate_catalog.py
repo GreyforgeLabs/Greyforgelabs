@@ -155,7 +155,7 @@ def card_grid(rows: list[list[str]], columns: int) -> list[str]:
 
 SECTIONS = (
     ("desktop", "Omarchy desktop tools", "Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based Arch Linux setup.", 3),
-    ("operator", "Operator utilities", "Small tools for people who run their own Linux hosts, scheduled jobs, and services.", 2),
+    ("operator", "Operator utilities", "Small tools for people who run their own Linux hosts, scheduled jobs, and services. [devcap](https://github.com/GreyforgeLabs/devcap) remains available for existing users in maintenance-only status.", 2),
     ("agent", "Agent infrastructure", "Building blocks for AI agent systems.", 2),
 )
 

@@ -53,42 +53,37 @@ Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based 
 
 ## Operator utilities
 
-Small tools for people who run their own Linux hosts, scheduled jobs, and services.
+Small tools for people who run their own Linux hosts, scheduled jobs, and services. [devcap](https://github.com/GreyforgeLabs/devcap) remains available for existing users in maintenance-only status.
 
 <table>
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/GreyforgeLabs/node-healthcheck"><img src="assets/cards/node-healthcheck.svg" alt="node-healthcheck" width="100%"></a>
-<p>One Bash script that runs Linux host health checks with JSON output, 0/1/2 exit codes, and multi-node SSH aggregation.</p>
+<p>One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable.</p>
 <p><img alt="Shell" src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white"> <a href="https://github.com/GreyforgeLabs/node-healthcheck#readme"><sub>Docs</sub></a></p>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/GreyforgeLabs/service-cartographer"><img src="assets/cards/service-cartographer.svg" alt="service-cartographer" width="100%"></a>
-<p>Builds a read-only keep, review, and retire matrix for services, cron jobs, wrappers, repos, and env-file metadata.</p>
+<p>Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit.</p>
 <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/service-cartographer#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/devcap"><img src="assets/cards/devcap.svg" alt="devcap" width="100%"></a>
-<p>Scans a machine for installed developer tools and reports versions, paths, and what is missing as text, JSON, or Markdown.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/devcap#readme"><sub>Docs</sub></a></p>
+<a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><img src="assets/cards/sqlite-checkpoint.svg" alt="sqlite-checkpoint" width="100%"></a>
+<p>Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance.</p>
+<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint#readme"><sub>Docs</sub></a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><img src="assets/cards/sqlite-checkpoint.svg" alt="sqlite-checkpoint" width="100%"></a>
-<p>CLI and Python library for SQLite WAL checkpoints, online backups, and snapshots, with no dependencies beyond the standard library.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint#readme"><sub>Docs</sub></a></p>
+<a href="https://github.com/GreyforgeLabs/cooldown-guard"><img src="assets/cards/cooldown-guard.svg" alt="cooldown-guard" width="100%"></a>
+<p>SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits.</p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/cooldown-guard#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/cooldown-guard"><img src="assets/cards/cooldown-guard.svg" alt="cooldown-guard" width="100%"></a>
-<p>SQLite-backed cooldown and retry gate that enforces minimum intervals for cron jobs, recurring commands, and repair loops.</p>
-<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/cooldown-guard#readme"><sub>Docs</sub></a></p>
-</td>
-<td width="50%" valign="top">
 <a href="https://github.com/GreyforgeLabs/atomic-json-store"><img src="assets/cards/atomic-json-store.svg" alt="atomic-json-store" width="100%"></a>
-<p>Atomic, cross-process locked, schema-versioned JSON persistence for Python with zero dependencies.</p>
+<p>Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects.</p>
 <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/atomic-json-store#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
