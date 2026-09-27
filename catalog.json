@@ -107,6 +107,14 @@
       "operator"
     ],
     [
+      "slopbrake",
+      "Python + TypeScript",
+      "https://github.com/GreyforgeLabs/slopbrake",
+      "https://greyforge.tech/chronicles/slopbrake-brakes-for-the-software-factory",
+      "MIT-licensed brakes for coding agents: catch tautological tests, commit review fixes, and hold one-way changes for a human",
+      "agent"
+    ],
+    [
       "memory-quality-gate",
       "Python",
       "https://github.com/GreyforgeLabs/memory-quality-gate",

@@ -101,10 +101,17 @@ Building blocks for AI agent systems.
 <table>
 <tr>
 <td width="50%" valign="top">
+<a href="https://github.com/GreyforgeLabs/slopbrake"><img src="assets/cards/slopbrake.svg" alt="slopbrake" width="100%"></a>
+<p>MIT-licensed brakes for coding agents: catch tautological tests, commit review fixes, and hold one-way changes for a human.</p>
+<p><img alt="Python + TypeScript" src="https://img.shields.io/badge/Python_%2B_TypeScript-64748B?style=flat-square"> <a href="https://greyforge.tech/chronicles/slopbrake-brakes-for-the-software-factory"><sub>Docs</sub></a></p>
+</td>
+<td width="50%" valign="top">
 <a href="https://github.com/GreyforgeLabs/memory-quality-gate"><img src="assets/cards/memory-quality-gate.svg" alt="memory-quality-gate" width="100%"></a>
 <p>Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage.</p>
 <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/memory-quality-gate#readme"><sub>Docs</sub></a></p>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/GreyforgeLabs/voiceops"><img src="assets/cards/voiceops.svg" alt="voiceops" width="100%"></a>
 <p>Full-duplex Discord voice loop for agent gateways.</p>
