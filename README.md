@@ -34,6 +34,11 @@ Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based 
 <table>
 <tr>
 <td width="33%" valign="top">
+<a href="https://github.com/GreyforgeLabs/omarchy-cris"><img src="assets/cards/CRIS.svg" alt="CRIS" width="100%"></a>
+<p>CPU, RAM, Internet, Storage in the Omarchy bar; a 5 KB native monitor with configurable metrics and refresh intervals.</p>
+<p><img alt="C / QML" src="https://img.shields.io/badge/C_/_QML-64748B?style=flat-square"> <a href="https://github.com/GreyforgeLabs/omarchy-cris#readme"><sub>Docs</sub></a></p>
+</td>
+<td width="33%" valign="top">
 <a href="https://github.com/GreyforgeLabs/reprieve"><img src="assets/cards/reprieve.svg" alt="reprieve" width="100%"></a>
 <p>Makes Super+W on Omarchy hide the window instead of killing it, so one keystroke brings it back exactly as it was.</p>
 <p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/reprieve#readme"><sub>Docs</sub></a></p>
@@ -43,6 +48,8 @@ Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based 
 <p>Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer.</p>
 <p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-hotbar#readme"><sub>Docs</sub></a></p>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><img src="assets/cards/omarchy-grabbar.svg" alt="omarchy-grabbar" width="100%"></a>
 <p>Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back.</p>
@@ -127,7 +134,7 @@ Finished or retired work, kept public for reference.
 | [pcam](https://github.com/GreyforgeLabs/pcam) · [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Spec | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
 | [geminibot](https://github.com/GreyforgeLabs/geminibot) · [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Node.js | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
 
-Records: [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
+Records: [CRIS announcement on X](https://x.com/GreyforgeLabs/status/2104939023513145412) · [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
 
 <div align="center">
 
