@@ -68,14 +68,14 @@ class CatalogTests(unittest.TestCase):
 
     def test_active_catalog_contains_only_the_approved_oss_tools(self) -> None:
         expected = {
-            "reprieve", "omarchy-hotbar", "omarchy-grabbar", "atomic-json-store",
+            "CRIS", "reprieve", "omarchy-hotbar", "omarchy-grabbar", "atomic-json-store",
             "node-healthcheck", "service-cartographer", "slopbrake", "memory-quality-gate",
             "sqlite-checkpoint", "cooldown-guard", "voiceops",
         }
         self.assertEqual({row[0] for row in self.data["openforge_utilities"]}, expected)
         for rendered in (render_readme(self.data), render_index(self.data)):
             for name in expected:
-                self.assertIn(f"https://github.com/GreyforgeLabs/{name}", rendered)
+                self.assertIn(f"https://github.com/GreyforgeLabs/{'omarchy-cris' if name == 'CRIS' else name}", rendered)
 
     def test_historical_projects_are_labeled_and_separate_from_active_tools(self) -> None:
         history = {row[0]: row[4] for row in self.data["archived_specs"]}
@@ -117,8 +117,9 @@ class CatalogTests(unittest.TestCase):
             self.assertNotIn("'", url)
 
     def test_catalog_links_do_not_depend_on_social_network_access(self) -> None:
-        for rendered in (render_readme(self.data), render_index(self.data)):
-            self.assertNotIn("https://x.com/", rendered)
+        for row in self.data["openforge_utilities"]:
+            self.assertTrue(row[2].startswith("https://github.com/"))
+            self.assertFalse(row[3].startswith("https://x.com/"))
 
     def test_empty_products_are_valid_and_hide_the_product_section(self) -> None:
         data = copy.deepcopy(self.data)

@@ -35,6 +35,14 @@
   "products": [],
   "openforge_utilities": [
     [
+      "CRIS",
+      "C / QML",
+      "https://github.com/GreyforgeLabs/omarchy-cris",
+      "https://github.com/GreyforgeLabs/omarchy-cris#readme",
+      "CPU, RAM, Internet, Storage in the Omarchy bar; a 5 KB native monitor with configurable metrics and refresh intervals",
+      "desktop"
+    ],
+    [
       "reprieve",
       "QML",
       "https://github.com/GreyforgeLabs/reprieve",
@@ -147,6 +155,10 @@
     ]
   ],
   "proof_trail": [
+    [
+      "CRIS announcement on X",
+      "https://x.com/GreyforgeLabs/status/2104939023513145412"
+    ],
     [
       "Sley releases",
       "https://github.com/sley-lang/sley/releases"
