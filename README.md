@@ -65,33 +65,33 @@ Small tools for people who run their own Linux hosts, scheduled jobs, and servic
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/node-healthcheck"><img src="assets/cards/node-healthcheck.svg" alt="node-healthcheck" width="100%"></a>
+<a href="https://github.com/GreyforgeLabs/firepot"><img src="assets/cards/firepot.svg" alt="firepot" width="100%"></a>
 <p>One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable.</p>
-<p><img alt="Shell" src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white"> <a href="https://github.com/GreyforgeLabs/node-healthcheck#readme"><sub>Docs</sub></a></p>
+<p><img alt="Shell" src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white"> <a href="https://github.com/GreyforgeLabs/firepot#readme"><sub>Docs</sub></a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/service-cartographer"><img src="assets/cards/service-cartographer.svg" alt="service-cartographer" width="100%"></a>
+<a href="https://github.com/GreyforgeLabs/oremap"><img src="assets/cards/oremap.svg" alt="oremap" width="100%"></a>
 <p>Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/service-cartographer#readme"><sub>Docs</sub></a></p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/oremap#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/sqlite-checkpoint"><img src="assets/cards/sqlite-checkpoint.svg" alt="sqlite-checkpoint" width="100%"></a>
-<p>Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/sqlite-checkpoint#readme"><sub>Docs</sub></a></p>
+<a href="https://github.com/GreyforgeLabs/moldbox"><img src="assets/cards/moldbox.svg" alt="moldbox" width="100%"></a>
+<p>Rust CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance.</p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/moldbox#readme"><sub>Docs</sub></a></p>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/cooldown-guard"><img src="assets/cards/cooldown-guard.svg" alt="cooldown-guard" width="100%"></a>
+<a href="https://github.com/GreyforgeLabs/slake"><img src="assets/cards/slake.svg" alt="slake" width="100%"></a>
 <p>SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits.</p>
-<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/cooldown-guard#readme"><sub>Docs</sub></a></p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/slake#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/atomic-json-store"><img src="assets/cards/atomic-json-store.svg" alt="atomic-json-store" width="100%"></a>
-<p>Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects.</p>
-<p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/atomic-json-store#readme"><sub>Docs</sub></a></p>
+<a href="https://github.com/GreyforgeLabs/tongs"><img src="assets/cards/tongs.svg" alt="tongs" width="100%"></a>
+<p>Atomic, cross-process locked, schema-versioned JSON persistence as a Rust library and CLI; read-only metadata inspection has no file side effects.</p>
+<p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <a href="https://github.com/GreyforgeLabs/tongs#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 </table>

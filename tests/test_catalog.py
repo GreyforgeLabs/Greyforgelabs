@@ -68,9 +68,9 @@ class CatalogTests(unittest.TestCase):
 
     def test_active_catalog_contains_only_the_approved_oss_tools(self) -> None:
         expected = {
-            "CRIS", "reprieve", "omarchy-hotbar", "omarchy-grabbar", "atomic-json-store",
-            "node-healthcheck", "service-cartographer", "slopbrake", "memory-quality-gate",
-            "sqlite-checkpoint", "cooldown-guard", "voiceops",
+            "CRIS", "reprieve", "omarchy-hotbar", "omarchy-grabbar", "tongs",
+            "firepot", "oremap", "slopbrake", "memory-quality-gate",
+            "moldbox", "slake", "voiceops",
         }
         self.assertEqual({row[0] for row in self.data["openforge_utilities"]}, expected)
         for rendered in (render_readme(self.data), render_index(self.data)):
