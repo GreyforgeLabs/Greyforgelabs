@@ -67,43 +67,43 @@
       "desktop"
     ],
     [
-      "node-healthcheck",
+      "firepot",
       "Shell",
-      "https://github.com/GreyforgeLabs/node-healthcheck",
-      "https://github.com/GreyforgeLabs/node-healthcheck#readme",
+      "https://github.com/GreyforgeLabs/firepot",
+      "https://github.com/GreyforgeLabs/firepot#readme",
       "One Bash script for Linux host checks and SSH fleet reports; configured checks fail visibly when probes or mounts are unavailable",
       "operator"
     ],
     [
-      "service-cartographer",
-      "Python",
-      "https://github.com/GreyforgeLabs/service-cartographer",
-      "https://github.com/GreyforgeLabs/service-cartographer#readme",
+      "oremap",
+      "Rust",
+      "https://github.com/GreyforgeLabs/oremap",
+      "https://github.com/GreyforgeLabs/oremap#readme",
       "Inventories services, cron jobs, wrappers, repos, and env-file metadata; incomplete scans and retirement suggestions stay explicit",
       "operator"
     ],
     [
-      "sqlite-checkpoint",
-      "Python",
-      "https://github.com/GreyforgeLabs/sqlite-checkpoint",
-      "https://github.com/GreyforgeLabs/sqlite-checkpoint#readme",
-      "Python CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance",
+      "moldbox",
+      "Rust",
+      "https://github.com/GreyforgeLabs/moldbox",
+      "https://github.com/GreyforgeLabs/moldbox#readme",
+      "Rust CLI and library for SQLite online backups and WAL checkpoint reports, with complete-snapshot gating and restore guidance",
       "operator"
     ],
     [
-      "cooldown-guard",
+      "slake",
       "Rust",
-      "https://github.com/GreyforgeLabs/cooldown-guard",
-      "https://github.com/GreyforgeLabs/cooldown-guard#readme",
+      "https://github.com/GreyforgeLabs/slake",
+      "https://github.com/GreyforgeLabs/slake#readme",
       "SQLite-backed cooldown and retry gate for recurring commands, with active-claim protection on clear and documented lease limits",
       "operator"
     ],
     [
-      "atomic-json-store",
-      "Python",
-      "https://github.com/GreyforgeLabs/atomic-json-store",
-      "https://github.com/GreyforgeLabs/atomic-json-store#readme",
-      "Atomic, cross-process locked, schema-versioned JSON persistence for Python; read-only metadata inspection has no file side effects",
+      "tongs",
+      "Rust",
+      "https://github.com/GreyforgeLabs/tongs",
+      "https://github.com/GreyforgeLabs/tongs#readme",
+      "Atomic, cross-process locked, schema-versioned JSON persistence as a Rust library and CLI; read-only metadata inspection has no file side effects",
       "operator"
     ],
     [
