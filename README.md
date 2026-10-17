@@ -27,6 +27,16 @@
 </tr>
 </table>
 
+## Downloads
+
+### ZJX Basic 1.0
+
+Available for Linux x86_64.
+
+Create ZJX, ZIP and tar.zst archives from your file manager or the command line. Browse common archive formats and preview individual files. Free for personal use and eligible organizations under the ZJX license. Windows and macOS are planned.
+
+[Download ZJX Basic 1.0](https://zjx.app/download)
+
 ## Omarchy desktop tools
 
 Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based Arch Linux setup.
@@ -134,7 +144,7 @@ Finished or retired work, kept public for reference.
 | [pcam](https://github.com/GreyforgeLabs/pcam) · [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Spec | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
 | [geminibot](https://github.com/GreyforgeLabs/geminibot) · [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Node.js | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
 
-Records: [CRIS announcement on X](https://x.com/GreyforgeLabs/status/2104939023513145412) · [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md)
+Records: [CRIS announcement on X](https://x.com/GreyforgeLabs/status/2104939023513145412) · [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md) · [ZJX Basic 1.0 release](https://greyforge.tech/chronicles/zjx-basic-1-0)
 
 <div align="center">
 

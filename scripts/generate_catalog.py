@@ -199,6 +199,13 @@ def render_readme(data: dict) -> str:
             "</table>",
             "",
         ])
+    if data["products"]:
+        lines.extend(["## Downloads", ""])
+        for name, availability, url, desc in data["products"]:
+            lines.extend([
+                f"### {name}", "", availability + ".", "", desc, "",
+                md_link(f"Download {name}", url), "",
+            ])
     for category, title, blurb, columns in SECTIONS:
         rows = [row for row in data["openforge_utilities"] if row[5] == category]
         if not rows:
