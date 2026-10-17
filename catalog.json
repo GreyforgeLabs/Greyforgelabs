@@ -32,7 +32,14 @@
       "A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit."
     ]
   ],
-  "products": [],
+  "products": [
+    [
+      "ZJX Basic 1.0",
+      "Available for Linux x86_64",
+      "https://zjx.app/download",
+      "Create ZJX, ZIP and tar.zst archives from your file manager or the command line. Browse common archive formats and preview individual files. Free for personal use and eligible organizations under the ZJX license. Windows and macOS are planned."
+    ]
+  ],
   "openforge_utilities": [
     [
       "CRIS",
@@ -170,6 +177,10 @@
     [
       "PCAM retired-draft status",
       "https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md"
+    ],
+    [
+      "ZJX Basic 1.0 release",
+      "https://greyforge.tech/chronicles/zjx-basic-1-0"
     ]
   ]
 }
