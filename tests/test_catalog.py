@@ -92,11 +92,23 @@ class CatalogTests(unittest.TestCase):
             for name in history:
                 self.assertIn(f"https://github.com/GreyforgeLabs/{name}", rendered)
 
-    def test_current_public_surfaces_are_oss_only(self) -> None:
-        self.assertEqual(self.data["products"], [])
+    def test_published_basic_download_is_separate_from_oss_tools(self) -> None:
+        self.assertEqual(len(self.data["products"]), 1)
+        name, availability, url, description = self.data["products"][0]
+        self.assertTrue(name.startswith("ZJX Basic "))
+        self.assertEqual(url, "https://zjx.app/download")
+        self.assertEqual(availability, "Available for Linux x86_64")
+        self.assertIn("under the ZJX license", description)
+        self.assertIn("Windows and macOS are planned", description)
+        self.assertNotIn(name, {row[0] for row in self.data["openforge_utilities"]})
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            self.assertIn(url, rendered)
+            self.assertIn(availability, rendered)
+
+    def test_public_surfaces_exclude_retired_offerings(self) -> None:
         surfaces = [json.dumps(self.data), render_readme(self.data), render_index(self.data)]
         retired = (
-            "zjx", "forgeshield", "forgestrike",
+            "forgeshield", "forgestrike",
             "forgequant", "agent cards", "forgevideo", "forgeclaw", "/store",
             "privacy tools", "privacy utilities", "market research", "private-package",
             "software products", "llms.txt",
