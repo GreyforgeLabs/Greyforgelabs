@@ -66,14 +66,6 @@
       "desktop"
     ],
     [
-      "omarchy-grabbar",
-      "C++",
-      "https://github.com/GreyforgeLabs/omarchy-grabbar",
-      "https://github.com/GreyforgeLabs/omarchy-grabbar#readme",
-      "Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back",
-      "desktop"
-    ],
-    [
       "firepot",
       "Shell",
       "https://github.com/GreyforgeLabs/firepot",
@@ -128,14 +120,6 @@
       "https://github.com/GreyforgeLabs/memory-quality-gate#readme",
       "Scores agent memory candidates with deterministic heuristics, not an LLM judge, before they reach long-term storage",
       "agent"
-    ],
-    [
-      "voiceops",
-      "Node.js",
-      "https://github.com/GreyforgeLabs/voiceops",
-      "https://github.com/GreyforgeLabs/voiceops#readme",
-      "Full-duplex Discord voice loop for agent gateways",
-      "agent"
     ]
   ],
   "archived_specs": [
@@ -145,20 +129,6 @@
       "https://github.com/GreyforgeLabs/sley-legacy",
       "https://github.com/GreyforgeLabs/sley-legacy#readme",
       "Sley 1.2 legacy lineage: the completed, frozen human-readable predecessor of Sley 2, kept for history and existing users"
-    ],
-    [
-      "pcam",
-      "Spec",
-      "https://github.com/GreyforgeLabs/pcam",
-      "https://github.com/GreyforgeLabs/pcam#readme",
-      "Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed"
-    ],
-    [
-      "geminibot",
-      "Node.js",
-      "https://github.com/GreyforgeLabs/geminibot",
-      "https://github.com/GreyforgeLabs/geminibot#readme",
-      "Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned"
     ]
   ],
   "proof_trail": [
@@ -173,10 +143,6 @@
     [
       "Sley 1.2.1 legacy source tag",
       "https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1"
-    ],
-    [
-      "PCAM retired-draft status",
-      "https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md"
     ],
     [
       "ZJX Basic 1.0 release",

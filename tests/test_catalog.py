@@ -68,9 +68,9 @@ class CatalogTests(unittest.TestCase):
 
     def test_active_catalog_contains_only_the_approved_oss_tools(self) -> None:
         expected = {
-            "CRIS", "reprieve", "omarchy-hotbar", "omarchy-grabbar", "tongs",
+            "CRIS", "reprieve", "omarchy-hotbar", "tongs",
             "firepot", "oremap", "slopbrake", "memory-quality-gate",
-            "moldbox", "slake", "voiceops",
+            "moldbox", "slake",
         }
         self.assertEqual({row[0] for row in self.data["openforge_utilities"]}, expected)
         for rendered in (render_readme(self.data), render_index(self.data)):
@@ -79,14 +79,9 @@ class CatalogTests(unittest.TestCase):
 
     def test_historical_projects_are_labeled_and_separate_from_active_tools(self) -> None:
         history = {row[0]: row[4] for row in self.data["archived_specs"]}
-        self.assertEqual(set(history), {"sley-legacy", "pcam", "geminibot"})
+        self.assertEqual(set(history), {"sley-legacy"})
         self.assertIn("Sley 1.2", history["sley-legacy"])
         self.assertIn("legacy", history["sley-legacy"].lower())
-        self.assertIn("retired", history["pcam"].lower())
-        self.assertIn("draft", history["pcam"].lower())
-        self.assertIn("no conformance class claimed", history["pcam"].lower())
-        self.assertIn("archived", history["geminibot"].lower())
-        self.assertIn("no further releases", history["geminibot"].lower())
         for rendered in (render_readme(self.data), render_index(self.data)):
             self.assertIn("Historical Projects", rendered)
             for name in history:
@@ -112,6 +107,7 @@ class CatalogTests(unittest.TestCase):
             "forgequant", "agent cards", "forgevideo", "forgeclaw", "/store",
             "privacy tools", "privacy utilities", "market research", "private-package",
             "software products", "llms.txt",
+            "voiceops", "grabbar", "geminibot", "greyforgelabs/pcam", "greyforgelabs/trio",
         )
         for surface in surfaces:
             for phrase in retired:

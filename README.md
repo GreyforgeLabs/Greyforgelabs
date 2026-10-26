@@ -59,13 +59,6 @@ Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based 
 <p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-hotbar#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
-<tr>
-<td width="33%" valign="top">
-<a href="https://github.com/GreyforgeLabs/omarchy-grabbar"><img src="assets/cards/omarchy-grabbar.svg" alt="omarchy-grabbar" width="100%"></a>
-<p>Mouse-driven window controls for Omarchy: minimize, maximize, close, and move, and every minimized window keeps a way back.</p>
-<p><img alt="C++" src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-grabbar#readme"><sub>Docs</sub></a></p>
-</td>
-</tr>
 </table>
 
 ## Operator utilities
@@ -123,13 +116,6 @@ Building blocks for AI agent systems.
 <p><img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"> <a href="https://github.com/GreyforgeLabs/memory-quality-gate#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/GreyforgeLabs/voiceops"><img src="assets/cards/voiceops.svg" alt="voiceops" width="100%"></a>
-<p>Full-duplex Discord voice loop for agent gateways.</p>
-<p><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"> <a href="https://github.com/GreyforgeLabs/voiceops#readme"><sub>Docs</sub></a></p>
-</td>
-</tr>
 </table>
 
 <img src="assets/divider.svg" alt="" width="100%">
@@ -141,10 +127,8 @@ Finished or retired work, kept public for reference.
 | Project | Stack | Status |
 |---|---|---|
 | [sley-legacy](https://github.com/GreyforgeLabs/sley-legacy) · [Docs](https://github.com/GreyforgeLabs/sley-legacy#readme) | Shell | Sley 1.2 legacy lineage: the completed, frozen human-readable predecessor of Sley 2, kept for history and existing users |
-| [pcam](https://github.com/GreyforgeLabs/pcam) · [Docs](https://github.com/GreyforgeLabs/pcam#readme) | Spec | Retired archival draft; final published candidate `v3.0.0-draft.1`; no conformance class claimed |
-| [geminibot](https://github.com/GreyforgeLabs/geminibot) · [Docs](https://github.com/GreyforgeLabs/geminibot#readme) | Node.js | Archived Telegram assistant bridge; historical reference only, with no further releases, dependency updates, or security fixes planned |
 
-Records: [CRIS announcement on X](https://x.com/GreyforgeLabs/status/2104939023513145412) · [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [PCAM retired-draft status](https://github.com/GreyforgeLabs/pcam/blob/main/STATUS.md) · [ZJX Basic 1.0 release](https://greyforge.tech/chronicles/zjx-basic-1-0)
+Records: [CRIS announcement on X](https://x.com/GreyforgeLabs/status/2104939023513145412) · [Sley releases](https://github.com/sley-lang/sley/releases) · [Sley 1.2.1 legacy source tag](https://github.com/GreyforgeLabs/sley-legacy/tree/v1.2.1) · [ZJX Basic 1.0 release](https://greyforge.tech/chronicles/zjx-basic-1-0)
 
 <div align="center">
 

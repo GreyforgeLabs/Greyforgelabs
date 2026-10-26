@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased - 2026-10-25
+
+- The catalog now lists only maintained projects: VoiceOps, Grabbar, PCAM and GeminiBot were removed along with their repositories.
+
 ## 1.1.0 - 2026-09-26
 
 - Redesigned the profile README: animated banner, generated SVG project cards, stack badges, and sections for Sley, Omarchy desktop tools, operator utilities, and agent infrastructure.
