@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from check_catalog_links import catalog_urls, check_url, generated_surface_urls  # noqa: E402
+from check_catalog_links import catalog_urls, check_url, generated_surface_urls, is_fetchable  # noqa: E402
 from generate_catalog import load_catalog, render_cards, render_index, render_readme, validate_catalog  # noqa: E402
 
 
@@ -70,7 +70,7 @@ class CatalogTests(unittest.TestCase):
         expected = {
             "CRIS", "reprieve", "omarchy-hotbar", "tongs",
             "firepot", "oremap", "slopbrake", "memory-quality-gate",
-            "moldbox", "slake",
+            "moldbox", "slake", "omarchy-sley-arena",
         }
         self.assertEqual({row[0] for row in self.data["openforge_utilities"]}, expected)
         for rendered in (render_readme(self.data), render_index(self.data)):
@@ -89,16 +89,18 @@ class CatalogTests(unittest.TestCase):
 
     def test_published_basic_download_is_separate_from_oss_tools(self) -> None:
         self.assertEqual(len(self.data["products"]), 1)
-        name, availability, url, description = self.data["products"][0]
+        name, availability, url, description, proof = self.data["products"][0]
         self.assertTrue(name.startswith("ZJX Basic "))
         self.assertEqual(url, "https://zjx.app/download")
         self.assertEqual(availability, "Available for Linux x86_64")
         self.assertIn("under the ZJX license", description)
         self.assertIn("Windows and macOS are planned", description)
+        self.assertEqual(proof, "https://github.com/GreyforgeLabs/zjx-benchmarks")
         self.assertNotIn(name, {row[0] for row in self.data["openforge_utilities"]})
         for rendered in (render_readme(self.data), render_index(self.data)):
             self.assertIn(url, rendered)
             self.assertIn(availability, rendered)
+            self.assertIn(proof, rendered)
 
     def test_public_surfaces_exclude_retired_offerings(self) -> None:
         surfaces = [json.dumps(self.data), render_readme(self.data), render_index(self.data)]
@@ -139,7 +141,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_nonempty_products_still_render_when_explicitly_supplied(self) -> None:
         data = copy.deepcopy(self.data)
-        data["products"] = [["Example & Tool", "OSS", "https://example.invalid", "A <tool>"]]
+        data["products"] = [["Example & Tool", "OSS", "https://example.invalid", "A <tool>", "https://example.invalid/proof"]]
         validate_catalog(data)
         rendered = render_index(data)
         self.assertIn('id="products-title"', rendered)
@@ -197,6 +199,16 @@ class CatalogTests(unittest.TestCase):
         urls = generated_surface_urls()
         self.assertIn("https://github.com/GreyforgeLabs", urls)
         self.assertIn("https://greyforge.tech/about", urls)
+
+    def test_sley_arena_and_x_follow_are_linked(self) -> None:
+        for rendered in (render_readme(self.data), render_index(self.data)):
+            self.assertIn("https://sleylang.org/arena", rendered)
+            self.assertIn("https://x.com/GreyforgeLabs", rendered)
+
+    def test_x_links_are_not_fetched_by_the_link_check(self) -> None:
+        self.assertFalse(is_fetchable("https://x.com/GreyforgeLabs"))
+        self.assertTrue(is_fetchable("https://github.com/GreyforgeLabs"))
+        self.assertTrue(is_fetchable("https://sleylang.org/arena"))
 
     def test_catalog_is_valid_json(self) -> None:
         self.assertIsInstance(json.loads((ROOT / "catalog.json").read_text()), dict)

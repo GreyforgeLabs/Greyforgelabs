@@ -3,6 +3,9 @@
 ## Unreleased - 2026-10-25
 
 - The catalog now lists only maintained projects: VoiceOps, Grabbar, PCAM and GeminiBot were removed along with their repositories.
+- Added the omarchy-sley-arena bar widget to the Omarchy desktop tools, a Sley Arena link next to Sley, and a public benchmarks link next to the ZJX Basic download (`products` rows gain a fifth column for it).
+- Added a Follow @GreyforgeLabs badge to the header and the Pages footer; the Organization `sameAs` now includes the X account.
+- Moved the 1.0.0 audit evidence record to `docs/history/`.
 
 ## 1.1.0 - 2026-09-26
 
