@@ -4,7 +4,7 @@
 
 <img src="assets/banner.svg" alt="Greyforge Labs. Autonomy, Engineered." width="100%">
 
-<a href="https://greyforge.tech"><img alt="greyforge.tech" src="https://img.shields.io/badge/greyforge.tech-F2B84B?style=for-the-badge&logo=firefoxbrowser&logoColor=000000"></a> <a href="https://github.com/sley-lang"><img alt="sley-lang" src="https://img.shields.io/badge/sley--lang-EE7890?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://github.com/GreyforgeLabs"><img alt="GreyforgeLabs" src="https://img.shields.io/badge/GreyforgeLabs-7EDC89?style=for-the-badge&logo=github&logoColor=000000"></a>
+<a href="https://greyforge.tech"><img alt="greyforge.tech" src="https://img.shields.io/badge/greyforge.tech-F2B84B?style=for-the-badge&logo=firefoxbrowser&logoColor=000000"></a> <a href="https://github.com/sley-lang"><img alt="sley-lang" src="https://img.shields.io/badge/sley--lang-EE7890?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://github.com/GreyforgeLabs"><img alt="GreyforgeLabs" src="https://img.shields.io/badge/GreyforgeLabs-7EDC89?style=for-the-badge&logo=github&logoColor=000000"></a> <a href="https://x.com/GreyforgeLabs"><img alt="@GreyforgeLabs" src="https://img.shields.io/badge/@GreyforgeLabs-000000?style=for-the-badge&logo=x&logoColor=FFFFFF"></a>
 
 </div>
 
@@ -21,7 +21,7 @@
 </td>
 <td valign="middle">
 <p>A machine-native programming language for AI agents. A Sley program is a typed, content-addressed semantic graph rather than source text. Agents read it through bounded queries and change it with typed mutations, and a deterministic kernel checks every change before an atomic commit.</p>
-<p><a href="https://github.com/sley-lang/sley"><b>Source</b></a> · <a href="https://github.com/sley-lang"><b>sley-lang on GitHub</b></a> · <a href="https://github.com/sley-lang/sley/releases"><b>Releases</b></a> · <a href="https://github.com/sley-lang/sley/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a></p>
+<p><a href="https://github.com/sley-lang/sley"><b>Source</b></a> · <a href="https://github.com/sley-lang"><b>sley-lang on GitHub</b></a> · <a href="https://github.com/sley-lang/sley/releases"><b>Releases</b></a> · <a href="https://github.com/sley-lang/sley/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a> · <a href="https://sleylang.org/arena"><b>Play the Sley Arena</b></a></p>
 <p><img alt="Rust" src="https://img.shields.io/badge/Rust-B7410E?style=flat-square&logo=rust&logoColor=white"> <img alt="Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square"></p>
 </td>
 </tr>
@@ -35,7 +35,7 @@ Available for Linux x86_64.
 
 Create ZJX, ZIP and tar.zst archives from your file manager or the command line. Browse common archive formats and preview individual files. Free for personal use and eligible organizations under the ZJX license. Windows and macOS are planned.
 
-[Download ZJX Basic 1.0](https://zjx.app/download)
+[Download ZJX Basic 1.0](https://zjx.app/download) · [Public benchmarks](https://github.com/GreyforgeLabs/zjx-benchmarks)
 
 ## Omarchy desktop tools
 
@@ -57,6 +57,13 @@ Plugins and window tools for [Omarchy](https://omarchy.org), the Hyprland-based 
 <a href="https://github.com/GreyforgeLabs/omarchy-hotbar"><img src="assets/cards/omarchy-hotbar.svg" alt="omarchy-hotbar" width="100%"></a>
 <p>Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer.</p>
 <p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-hotbar#readme"><sub>Docs</sub></a></p>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/GreyforgeLabs/omarchy-sley-arena"><img src="assets/cards/omarchy-sley-arena.svg" alt="omarchy-sley-arena" width="100%"></a>
+<p>Live Sley Arena rank for your bot on the Omarchy bar, with the top of the ladder one click away.</p>
+<p><img alt="QML" src="https://img.shields.io/badge/QML-41CD52?style=flat-square&logo=qt&logoColor=white"> <a href="https://github.com/GreyforgeLabs/omarchy-sley-arena#readme"><sub>Docs</sub></a></p>
 </td>
 </tr>
 </table>

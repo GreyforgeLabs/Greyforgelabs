@@ -15,12 +15,13 @@ CARDS = ROOT / "assets" / "cards"
 
 
 CATALOG_VERSION = "1.1.0"
+SLEY_ARENA = "https://sleylang.org/arena"
 CATEGORIES = ("desktop", "operator", "agent")
 
 TABLE_WIDTHS = {
     "surfaces": 3,
     "flagship": 5,
-    "products": 4,
+    "products": 5,
     "openforge_utilities": 6,
     "archived_specs": 5,
     "proof_trail": 2,
@@ -102,6 +103,7 @@ SURFACE_BADGES = {
     "sleylang.org": ("54D6D0", "", "000000"),
     "sley-lang": ("EE7890", "github", "000000"),
     "GreyforgeLabs": ("7EDC89", "github", "000000"),
+    "@GreyforgeLabs": ("000000", "x", "FFFFFF"),
 }
 
 CATEGORY_STYLE = {
@@ -191,7 +193,8 @@ def render_readme(data: dict) -> str:
             f"<p>{html.escape(desc)}</p>",
             f'<p><a href="{repo}"><b>Source</b></a> · <a href="{homepage}"><b>sley-lang on GitHub</b></a>'
             f' · <a href="{repo}/releases"><b>Releases</b></a>'
-            f' · <a href="{repo}/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a></p>',
+            f' · <a href="{repo}/blob/main/docs/QUICKSTART.md"><b>Quickstart</b></a>'
+            f' · <a href="{SLEY_ARENA}"><b>Play the Sley Arena</b></a></p>',
             f"<p>{stack_badge(stack)} "
             '<img alt="Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-3B82F6?style=flat-square"></p>',
             "</td>",
@@ -201,10 +204,10 @@ def render_readme(data: dict) -> str:
         ])
     if data["products"]:
         lines.extend(["## Downloads", ""])
-        for name, availability, url, desc in data["products"]:
+        for name, availability, url, desc, proof in data["products"]:
             lines.extend([
                 f"### {name}", "", availability + ".", "", desc, "",
-                md_link(f"Download {name}", url), "",
+                md_link(f"Download {name}", url) + " · " + md_link("Public benchmarks", proof), "",
             ])
     for category, title, blurb, columns in SECTIONS:
         rows = [row for row in data["openforge_utilities"] if row[5] == category]
@@ -288,7 +291,11 @@ def card(name: str, kicker: str, url: str, desc: str) -> str:
 
 def render_index(data: dict) -> str:
     org = data["organization"]
-    product_cards = "\n".join(card(name, kicker, url, desc) for name, kicker, url, desc in data["products"])
+    product_cards = "\n".join(card(name, kicker, url, desc) for name, kicker, url, desc, _proof in data["products"])
+    product_proofs = "\n".join(
+        f'        <a href="{html.escape(proof)}">{html.escape(name)} public benchmarks</a>'
+        for name, _kicker, _url, _desc, proof in data["products"]
+    )
     product_section = f"""
     <section class="section" aria-labelledby="products-title">
       <div class="section-heading">
@@ -297,6 +304,9 @@ def render_index(data: dict) -> str:
       </div>
       <div class="card-grid product-grid">
 {product_cards}
+      </div>
+      <div class="link-row">
+{product_proofs}
       </div>
     </section>
 """ if data["products"] else ""
@@ -415,6 +425,7 @@ def render_index(data: dict) -> str:
         <div class="hero-actions" aria-label="Main links">
           <a class="button primary" href="https://greyforge.tech">Visit Greyforge</a>
           <a class="button" href="https://github.com/sley-lang/sley">Sley</a>
+          <a class="button" href="{SLEY_ARENA}">Sley Arena</a>
           <a class="button" href="https://github.com/GreyforgeLabs">GitHub Repos</a>
           <a class="button" href="#openforge-title">Explore Tools</a>
         </div>
@@ -479,6 +490,7 @@ def render_index(data: dict) -> str:
     <nav aria-label="Footer">
       <a href="https://greyforge.tech">greyforge.tech</a>
       <a href="https://github.com/GreyforgeLabs">GitHub</a>
+      <a href="https://x.com/GreyforgeLabs">Follow @GreyforgeLabs</a>
     </nav>
   </footer>
 </body>

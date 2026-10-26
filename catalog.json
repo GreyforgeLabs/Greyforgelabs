@@ -21,6 +21,11 @@
       "GreyforgeLabs",
       "https://github.com/GreyforgeLabs",
       "Greyforge Labs repositories on GitHub"
+    ],
+    [
+      "@GreyforgeLabs",
+      "https://x.com/GreyforgeLabs",
+      "Greyforge Labs on X"
     ]
   ],
   "flagship": [
@@ -37,7 +42,8 @@
       "ZJX Basic 1.0",
       "Available for Linux x86_64",
       "https://zjx.app/download",
-      "Create ZJX, ZIP and tar.zst archives from your file manager or the command line. Browse common archive formats and preview individual files. Free for personal use and eligible organizations under the ZJX license. Windows and macOS are planned."
+      "Create ZJX, ZIP and tar.zst archives from your file manager or the command line. Browse common archive formats and preview individual files. Free for personal use and eligible organizations under the ZJX license. Windows and macOS are planned.",
+      "https://github.com/GreyforgeLabs/zjx-benchmarks"
     ]
   ],
   "openforge_utilities": [
@@ -63,6 +69,14 @@
       "https://github.com/GreyforgeLabs/omarchy-hotbar",
       "https://github.com/GreyforgeLabs/omarchy-hotbar#readme",
       "Omarchy bar plugin with fixed app slots, filesystem Places, and one bounded Running drawer",
+      "desktop"
+    ],
+    [
+      "omarchy-sley-arena",
+      "QML",
+      "https://github.com/GreyforgeLabs/omarchy-sley-arena",
+      "https://github.com/GreyforgeLabs/omarchy-sley-arena#readme",
+      "Live Sley Arena rank for your bot on the Omarchy bar, with the top of the ladder one click away",
       "desktop"
     ],
     [
