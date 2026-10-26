@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from check_catalog_links import catalog_urls, check_url, generated_surface_urls  # noqa: E402
+from check_catalog_links import catalog_urls, check_url, generated_surface_urls, is_fetchable  # noqa: E402
 from generate_catalog import load_catalog, render_cards, render_index, render_readme, validate_catalog  # noqa: E402
 
 
@@ -204,6 +204,11 @@ class CatalogTests(unittest.TestCase):
         for rendered in (render_readme(self.data), render_index(self.data)):
             self.assertIn("https://sleylang.org/arena", rendered)
             self.assertIn("https://x.com/GreyforgeLabs", rendered)
+
+    def test_x_links_are_not_fetched_by_the_link_check(self) -> None:
+        self.assertFalse(is_fetchable("https://x.com/GreyforgeLabs"))
+        self.assertTrue(is_fetchable("https://github.com/GreyforgeLabs"))
+        self.assertTrue(is_fetchable("https://sleylang.org/arena"))
 
     def test_catalog_is_valid_json(self) -> None:
         self.assertIsInstance(json.loads((ROOT / "catalog.json").read_text()), dict)

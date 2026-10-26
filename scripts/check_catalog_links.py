@@ -8,11 +8,21 @@ from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 from generate_catalog import load_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# X answers unauthenticated requests from CI runners with HTTP 403 whether or
+# not the profile exists, so a fetch proves nothing. These links are listed but
+# not fetched; the GitHub and greyforge.tech links are still checked.
+UNFETCHABLE_HOSTS = frozenset({"x.com", "twitter.com"})
+
+
+def is_fetchable(url: str) -> bool:
+    return (urlsplit(url).hostname or "").lower() not in UNFETCHABLE_HOSTS
 
 
 class _ExternalLinkParser(HTMLParser):
@@ -73,7 +83,9 @@ def main() -> int:
     if not 1 <= args.workers <= 16 or not 1 <= args.timeout <= 30:
         parser.error("workers must be 1..16 and timeout must be 1..30 seconds")
 
-    urls = sorted(set(catalog_urls(load_catalog())) | generated_surface_urls())
+    all_urls = set(catalog_urls(load_catalog())) | generated_surface_urls()
+    urls = sorted(url for url in all_urls if is_fetchable(url))
+    skipped = len(all_urls) - len(urls)
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         errors = [error for error in pool.map(lambda url: check_url(url, args.timeout), urls) if error]
     if errors:
@@ -81,7 +93,7 @@ def main() -> int:
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
-    print(f"catalog link check passed: {len(urls)} unique URLs")
+    print(f"catalog link check passed: {len(urls)} unique URLs ({skipped} social links listed, not fetched)")
     return 0
 
 
